@@ -49,11 +49,11 @@
                             <form id="login-form" class="form" action="" method="post">
                                 <h3 class="text-center text-info m-4">ĐĂNG NHẬP KHÁCH HÀNG</h3>
                                 <div class="form-group">
-                                    <label for="username" class="text-info">Tài khoản:</label><br>
+                                    <label for="username" class="text-info"><i class="fa-solid fa-user"></i> Tài khoản:</label><br>
                                     <input type="email" name="email" placeholder="Email..."  class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="password" class="text-info">Mật khẩu:</label><br>
+                                    <label for="password" class="text-info"><i class="fa-solid fa-key"></i> Mật khẩu:</label><br>
                                     <input type="password" name="password" id="password" placeholder="Mật khẩu...." class="form-control">
                                 </div>
                                 <div class="form-submit d-flex justify-content-between">

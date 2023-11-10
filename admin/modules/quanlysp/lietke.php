@@ -6,7 +6,7 @@
 
 <h2>LIỆT KÊ SẢN PHẨM</h2>
 
-    <table class="table table-bordered table-dark">
+    <table class="table table-bordered table-info" style="background-color: white;">
         <thead>
             <tr>
             <th scope="col">ID</th>
@@ -35,8 +35,8 @@
             <td><?php echo $row["masp"]  ?></td>
             <td><?php echo $row["tendanhmuc"]  ?></td>
             <td>
-                <a href="?action=quanlysanpham&query=sua&idsanpham=<?php echo $row["id_sanpham"] ?>">SỬA</a> | 
-                <a href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row["id_sanpham"] ?>">XÓA </a>
+                <a class="btn btn-primary" href="?action=quanlysanpham&query=sua&idsanpham=<?php echo $row["id_sanpham"] ?>">SỬA</a> | 
+                <a class="btn btn-danger" onclick=" return confirm('Bạn có chắc muốn xóa không')" href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row["id_sanpham"] ?>">XÓA </a>
             </td>
         </tr>
     <?php 

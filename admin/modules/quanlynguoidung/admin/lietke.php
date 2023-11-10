@@ -6,7 +6,7 @@
 
 <h2 class="p-4 mt-2 mb-2">LIỆT KÊ DANH SÁCH ADMIN</h2>
 
-    <table class="table table-bordered table-dark">
+    <table class="table table-bordered table-info" style="background-color: white;">
         <thead>
             <tr>
             <th scope="col">ID</th>
@@ -26,8 +26,8 @@
             <td><?php echo $row["username"]  ?></td>
 
             <td>
-                <a href="?action=quanlynguoidung&query=sua&idadmin=<?php echo $row["id_admin"] ?>">SỬA</a> | 
-                <a id="delete_button" href="modules/quanlynguoidung/admin/xuly.php?idadmin=<?php echo $row["id_admin"] ?>">XÓA </a>
+                <a class="btn btn-primary" href="?action=quanlynguoidung&query=sua&idadmin=<?php echo $row["id_admin"] ?>">SỬA</a> | 
+                <a class="btn btn-danger" onclick=" return confirm('Bạn có chắc muốn xóa không')" id="delete_button" href="modules/quanlynguoidung/admin/xuly.php?idadmin=<?php echo $row["id_admin"] ?>">XÓA </a>
             </td>
         </tr>
     <?php 

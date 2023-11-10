@@ -38,36 +38,36 @@
                     style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
                 </div>
                 <div class="col-xl-6">
-                  <div class="card-body p-md-5 text-black">
-                    <h3 class="mb-5 text-uppercase">Đăng ký tài khoản </h3>
+                  <div class="card-body p-md-5 text-info">
+                    <h3 class="mb-5 text-uppercase ">Đăng ký tài khoản </h3>
 
 
                     <div class="form-outline mb-4">
-                      <label class="form-label" for="form3Example8">Họ và tên</label>
+                      <label class="form-label" for="form3Example8"><i class="fa-solid fa-user"></i> Họ và tên</label>
                       <input type="text" name="hovaten"  class="form-control form-control-lg" />
                       
                     </div>
 
                     <div class="form-outline mb-4">
-                      <label class="form-label" for="form3Example9">Email</label>
+                      <label class="form-label" for="form3Example9"><i class="fa-regular fa-envelope"></i> Email</label>
                       <input type="email"  name="email" class="form-control form-control-lg" />
                       
                     </div>
 
                     <div class="form-outline mb-4">
-                      <label class="form-label" for="form3Example90">Địa chỉ</label>
+                      <label class="form-label" for="form3Example90"><i class="fa-solid fa-location-dot"></i> Địa chỉ</label>
                       <input type="text" id="diachi" name="diachi" class="form-control form-control-lg" />
                       
                     </div>
 
                     <div class="form-outline mb-4">
-                      <label class="form-label" for="form3Example99">Mật khẩu</label>
+                      <label class="form-label" for="form3Example99"><i class="fa-solid fa-key"></i> Mật khẩu</label>
                       <input type="password" name="matkhau"  class="form-control form-control-lg" />
                       
                     </div>
 
                     <div class="form-outline mb-4">
-                      <label class="form-label" for="form3Example97">Số điện thoại</label>
+                      <label class="form-label" for="form3Example97"><i class="fa-solid fa-phone"></i> Số điện thoại</label>
                       <input type="text" name="sodienthoai"  class="form-control form-control-lg" />
                       
                     </div>

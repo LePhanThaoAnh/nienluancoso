@@ -16,7 +16,7 @@
         color: black;
     }
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top "  style="height: 100px" style="font-family: 'UTMSwissCondensed';">
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top "  style="height: 100px" style="font-family: 'UTMSwissCondensed';">
         <a id="tieude" class="navbar-brand pl-4" href="https://nentang.vn">ANHLIGHT SHOP</a>
         <div class="container " height="50px" style="font-weight: bold; font-size:18px">
         
@@ -27,18 +27,24 @@
             <div class="collapse navbar-collapse" height="40px" width="100%" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        
-                        <a class="nav-link " href="index.php"><i class="fa-solid fa-house"></i> Trang chủ
-
+                        <a class="nav-link btn btn-info mr-2" href="index.php"><i class="fa-solid fa-house"></i> Trang chủ
                         </a>
                     </li>
+                    
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.php?quanly=gioithieu">Giới thiệu
+                        <a class="nav-link btn btn-info mr-2" href="index.php?quanly=gioithieu">Giới thiệu
                         </a>
                     </li>
 
 
-                    <?php 
+                    
+
+                    <div class="dropdown " >
+                    <button class="btn btn-info mr-2 dropdown-toggle" style="height: 42px;"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục sản phẩm
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <?php 
                         while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
                     ?>
 
@@ -49,25 +55,28 @@
                         </a>
                     </li>
 
+
                     <?php 
                         }
                     ?>
+                    </div>
+                    </div>
 
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.php?quanly=giohang"><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</a>
+                    <li class="nav-item active ">
+                        <a class="nav-link btn btn-info mr-2" href="index.php?quanly=giohang"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
                     </li>
 
                     <?php 
                         if(isset($_SESSION["dangky"])){
                     ?>
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php?dangxuat=1">Đăng xuất</a>
+                            <a class="nav-link btn btn-info mr-2" href="index.php?dangxuat=1">Đăng xuất</a>
                             
                         </li>
 
                         <li class="nav-item active">
-                        <a class="nav-link" href="index.php?quanly=doimatkhau"><i class="fa-solid fa-user"></i>Thay đổi mật khẩu</a>
+                        <a class="nav-link btn btn-info mr-2" href="index.php?quanly=doimatkhau"><i class="fa-solid fa-user"></i>Thay đổi mật khẩu</a>
                             
                         </li>
 
@@ -76,11 +85,11 @@
                     } else {
                     ?>
                         <li class="nav-item active">
-                        <a class="nav-link" href="index.php?quanly=dangky"><i class="fa-solid fa-user"></i> Đăng ký</a>
+                        <a class="nav-link btn btn-info mr-2" href="index.php?quanly=dangky"><i class="fa-solid fa-user"></i> Đăng ký</a>
                         </li>
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php?quanly=dangnhap"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+                            <a class="nav-link btn btn-info mr-2" href="index.php?quanly=dangnhap"><i class="fa-solid fa-user"></i> Đăng nhập</a>
                         </li>
 
                     <?php 

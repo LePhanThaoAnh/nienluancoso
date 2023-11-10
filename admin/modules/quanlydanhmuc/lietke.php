@@ -6,7 +6,7 @@
 
 <h2>LIỆT KÊ DANH MỤC SẢN PHẨM</h2>
 
-    <table class="table table-bordered table-dark rounded ">
+    <table class="table table-bordered table-info" style="background-color: white;">
         <thead>
             <tr>
             <th scope="col">ID</th>
@@ -26,8 +26,8 @@
             <td><?php echo $row["tendanhmuc"]  ?></td>
 
             <td>
-                <a href="?action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row["id"] ?>">SỬA</a> | 
-                <a href="modules/quanlydanhmuc/xuly.php?iddanhmuc=<?php echo $row["id"] ?>">XÓA </a>
+                <a class="btn btn-primary" href="?action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row["id"] ?>">SỬA</a> | 
+                <a class="btn btn-danger" onclick=" return confirm('Bạn có chắc muốn xóa không')" href="modules/quanlydanhmuc/xuly.php?iddanhmuc=<?php echo $row["id"] ?>">XÓA </a>
             </td>
         </tr>
     <?php 

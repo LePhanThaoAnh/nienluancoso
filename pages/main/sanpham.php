@@ -25,7 +25,7 @@
                     <p>Số lượng SP:  <?php echo $row_chitiet["soluong"] ?></p>
                     <p>Danh mục SP:  <?php echo $row_chitiet["tendanhmuc"] ?></p>
                     <p> <?php echo $row_chitiet["noidung"] ?></p>
-                    <p><input type="submit" name="themgiohang" value="Thêm giỏ hàng" class="input" style="cursor:pointer"></p>
+                    <p><i style="color: black;" class="fa-solid fa-cart-shopping"></i><input type="submit" name="themgiohang" value="MUA HÀNG" class="input" style="cursor:pointer"></p>
                 </form>
             </div>
         </div>

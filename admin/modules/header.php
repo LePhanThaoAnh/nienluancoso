@@ -10,7 +10,7 @@
         <div class="container " width="">
             <a class="navbar-brand" href="https://nentang.vn">AnhLight</a>
             
-        <a class="nav-link text-white" href="index.php?dangxuat=1">Đăng xuất: 
+        <a class="nav-link text-white font-weight-bold" href="index.php?dangxuat=1">Đăng xuất: 
           <?php if(isset($_SESSION["dangnhap"])){
             echo $_SESSION["dangnhap"];
           } ?>

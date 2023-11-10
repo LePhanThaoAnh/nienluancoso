@@ -1,4 +1,4 @@
-<footer class="py-3 bg-primary " >
+<footer class="py-3 bg-secondary " >
         <div class="container">
           
 

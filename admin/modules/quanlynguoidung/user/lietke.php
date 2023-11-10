@@ -14,7 +14,7 @@
         
 </div>
 
-    <table class="table table-bordered table-white"  style="background-color: white">
+    <table class="table table-bordered table-info" style="background-color: white;">
         <thead>
             <tr>
             <th scope="col">ID</th>

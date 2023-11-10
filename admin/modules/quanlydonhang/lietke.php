@@ -7,7 +7,7 @@
 
 <h2 class="pt-2 mt-2">LIỆT KÊ ĐƠN HÀNG</h2>
 
-    <table class="table table-bordered table-dark">
+    <table class="table table-bordered table-info" style="background-color: white;">
         <thead>
             <tr>
             <th scope="col">ID</th>

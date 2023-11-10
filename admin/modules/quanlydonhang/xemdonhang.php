@@ -6,10 +6,12 @@
      AND cart_details.code_cart = '$_GET[code]'  ORDER BY cart_details.id_cart_details DESC ";
     $query_lietke_dh = mysqli_query($mysqli,$sql_lietke_dh);
 ?>
+<div>
+    <h2 class="pt-2 mt-2">XEM ĐƠN HÀNG</h2>
+</div>
 
-<h2 class="pt-2 mt-2">XEM ĐƠN HÀNG</h2>
 
-    <table class="table table-bordered table-white" style="background-color: white">
+    <table class="table table-bordered table-info" style="background-color: white;">
         <thead>
             <tr>
             <th scope="col">ID</th>

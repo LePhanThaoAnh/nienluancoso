@@ -47,7 +47,7 @@
         $i++;
   
 ?>
-  <tbody class="border border-dark">
+  <tbody class="border border-dark font-weight-bold">
 
     <tr>
       <td class="border border-dark"><?php echo $i ?></td>
@@ -71,17 +71,17 @@
    ?>
    <tr >
         <td class="border border-dark" colspan="8">
-            <p  >TỔNG TIỀN: <?php echo number_format($tongtien,0,',','.').'vnd' ?></p>
-            <p><a href="pages/main/themgiohang.php?xoatatca=1">XÓA TẤT CẢ</a></p>
+            <p class="font-weight-bold " >TỔNG TIỀN: <?php echo number_format($tongtien,0,',','.').'vnd' ?></p>
+            <p class="font-weight-bold"><a href="pages/main/themgiohang.php?xoatatca=1">XÓA TẤT CẢ</a></p>
             <div style="clear:both;"></div>
             <?php 
               if(isset($_SESSION["dangky"])){
             ?>
-                  <p style="text-align:center"><a href="pages/main/thanhtoan.php">ĐẶT HÀNG</a></p>
+                  <p class="font-weight-bold" style="text-align:center"><a href="pages/main/thanhtoan.php">ĐẶT HÀNG</a></p>
             <?php
               }else{
             ?>
-                <p style="text-align:center"><a href="index.php?quanly=dangky">ĐĂNG KÝ ĐẶT HÀNG</a></p>
+                <p class="font-weight-bold" style="text-align:center"><a href="index.php?quanly=dangky">ĐĂNG KÝ ĐẶT HÀNG</a></p>
             <?php
               }
             ?>
