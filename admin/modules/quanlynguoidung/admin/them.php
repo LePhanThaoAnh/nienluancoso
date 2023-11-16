@@ -1,26 +1,23 @@
-<div class="container">
-    <div class="row">
-        <h2 class="col-9 p-4 mt-2 mb-2">THÊM TÀI KHOẢN ADMIN</h2>
-        <h3  class="col-3 p-4 mt-2 mb-2"> <a href="?action=quanlynguoidung&query=user">Quản lý user</a> </h3>
-    </div>
-      
-        
-        
+<div class="row pt-4">
+    <h2 class="col-2 ">
+    <a class="btn btn-warning"  href="index.php?action=quanlyadmin&query=admin"><i class="fa-solid fa-arrow-left"></i></a>
+    </h2>
+    <h2 class="col-10 ">THÊM TÀI KHOẢN ADMIN</h2>
 </div>
-<table class="table border border-dark" style="background-color: white" >
+<table class="table table-bordered border border-success table-success" style="background-color: white" >
     <form action="modules/quanlynguoidung/admin/xuly.php" method="POST">
         <tbody>
             <tr>
-                <th  class="border border-dark" scope="row">Tên admin</th>
-                <td  class="border border-dark" ><input type="text" name="tenadmin"></td>
+                <th  class="col border border-success" >Tên admin</th>
+                <td  class="col border border-success" ><input type="text" name="tenadmin"></td>
             </tr>
             <tr>
-                <th  class="border border-dark" scope="row">password</th>
-                <td  class="border border-dark"><input type="password" name="password"></td>
+                <th  class="col border border-success" >password</th>
+                <td  class="col border border-success"><input type="password" name="password"></td>
                 
             </tr>
             <tr>
-                <td colspan="2"><input type="submit" name="themadmin" value="Thêm admin"></td>
+                <td colspan="2"><input type="submit" name="themadmin" class="btn btn-dark" value="Thêm admin"></td>
             </tr>
         </tbody>
     </form>

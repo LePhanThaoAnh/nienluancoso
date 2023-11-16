@@ -18,7 +18,7 @@
                     $query_danhmuc = mysqli_query($mysqli,$sql_danhmuc);
                     while($row = mysqli_fetch_array($query_danhmuc)){
                 ?>
-                    <a href="index.php?quanly=danhmucsanpham&id=<?php echo ($row["id"]) ?>" class="list-group-item border border-dark">
+                    <a style="text-decoration: none" href="index.php?quanly=danhmucsanpham&id=<?php echo ($row["id"]) ?>" class="list-group-item border border-dark">
                         <?php echo ($row["tendanhmuc"]) ?></a>
                    <?php 
                     }
@@ -35,7 +35,7 @@
                     $query_giasp = mysqli_query($mysqli,$sql_giasp);
                     while($row = mysqli_fetch_array($query_giasp)){
                 ?>
-                    <a href="index.php?quanly=giasanpham&id=<?php echo ($row["id_gia"]) ?>" class="list-group-item border border-dark">
+                    <a style="text-decoration: none" href="index.php?quanly=giasanpham&id=<?php echo ($row["id_gia"]) ?>" class="list-group-item border border-dark">
                         <?php echo ($row["khoanggia"]) ?></a>
                    <?php 
                     }

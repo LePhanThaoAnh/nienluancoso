@@ -1,6 +1,6 @@
 .tabs {
     width: 100%;
-    background-color: #09F;
+    background-color: rgb(53, 64, 73);
     border-radius: 5px 5px 5px 5px;
   }
   ul#tabs-nav {
@@ -21,15 +21,15 @@
   }
   ul#tabs-nav li:hover,
   ul#tabs-nav li.active {
-    background-color: #08E;
+    background-color:rgb(37, 34, 34);
   }
   #tabs-nav li a {
     text-decoration: none;
-    color: #09F;
+    color: rgb(34, 40, 43);
   }
   .tab-content {
     padding: 10px;
-    border: 5px solid #09F;
+    border: 5px solid rgb(70, 74, 77);
     background-color: #FFF;
   }
   
@@ -42,4 +42,7 @@
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
     margin: 2em;
+  }
+  a{
+    text-decoration: none;
   }

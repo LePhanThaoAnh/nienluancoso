@@ -1,19 +1,9 @@
-<style>
-  .tieude{
-        text-align: center;
-        font-family: Georgia;
-        font-weight: bold;
-        font-size: 50px;
-        border: 2px double ;
-        border-radius: 3px;
-        background-color: white;
-  }
-</style>
-<h1 class="tieude"> CHÀO MỪNG BẠN ĐẾN VỚI ANHLIGHT SHOP </h1>
+
+
 <div class="row"> 
 
 
-<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel" style="height:500px; width:1200px; padding-left: 20px; ">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -50,4 +40,125 @@
                     </a>
                 </div>
 </div>
+</div> 
+
+<!-- <script>
+
+$(document).ready(function(){
+    $('.menu-btn').click(function(){
+        $('.sidebar').css({
+            'width':'70px',    
+    });
+        $('.text-link').hide();
+        $('.close-btn').show();
+        $('.menu-btn').hide();
+    });
+    $('.close-btn').click(function(){
+        $('.sidebar').css({
+            'width' : '300px',
+          
+        });
+        $('.text-link').show();
+        $('.clsoe-btn').hide();
+        $('.menu-btn').show();
+     });
+});
+</script>
+<div class="slider-area">
+    <div class="slider">
+      
+            <div>
+                <a href="#">
+                    <img src="../nienluancoso/img/hinhnen1.jpg">
+                </a>
+            <div class="slider-content">
+                <h3 class="text-white  text-capitalize">Thời trang TQT là một trong những thương hiệu “THỜI TRANG BỀN VỮNG” đầu tiên tại Việt Nam!</h3>
+                <a href="#"><button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Mua Ngay</button></a>
+                <a href="#"><button class="btn btn-outline-danger ml-5">Tham Khảo</button></a>
+            </div>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="../nienluancoso/img/hinhnen1.jpg">
+                </a>
+                <div class="slider-content">
+                <h3 class="text-white  text-capitalize">Thời trang TQT là một trong những thương hiệu “THỜI TRANG BỀN VỮNG” đầu tiên tại Việt Nam!</h3>
+                <a href="#"><button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Mua Ngay</button></a>
+                <a href="#"><button class="btn btn-outline-danger ml-5">Tham Khảo</button></a>
+            </div>
+            
+            </div>
+            <div>
+                <a href="#">
+                    <img src="../nienluancoso/img/hinhnen1.jpg">
+                </a>
+                <div class="slider-content">
+                    <h3 class="text-white  text-capitalize">Thời trang TQT là một trong những thương hiệu “THỜI TRANG BỀN VỮNG” đầu tiên tại Việt Nam!</h3>
+                    <a href="#"><button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Mua Ngay</button></a>
+                    <a href="#"><button class="btn btn-outline-danger ml-5">Tham Khảo</button></a>
+                </div>
+            </div>
+            </div>
+            </div> -->
+
+
+<div id="advantages">
+       
+       <div class="container " style="    padding-top: 60px;">
+           <div class="same-height-row">
+               
+               <div class="col-sm-4">
+                   
+                   <div class="box same-height">
+                       
+                       <div class="icon">
+                           
+                           <i class="fa fa-heart"></i>
+                           
+                       </div>
+                       
+                       <h3><a href="#">Phục vụ khách hàng tốt nhất  </a></h3>
+                       
+                       <p>Thời trang TQT xây dựng một trong những thương hiệu “THỜI TRANG BỀN VỮNG” đầu tiên tại Việt Nam.</p>
+                       
+                   </div>
+                   
+               </div>
+
+               <div class="col-sm-4">
+                   <div class="box same-height">
+                       
+                       <div class="icon">
+                           
+                           <i class="fa fa-tag"></i>
+                           
+                       </div>
+                       
+                       <h3><a href="#">Giá tốt nhất trên thị trường</a></h3>
+                       
+                       <p>Thời trang TQT xây dựng một trong những thương hiệu “THỜI TRANG BỀN VỮNG” đầu tiên tại Việt Nam.</p>
+                       
+                   </div>
+               </div>
+               
+
+               <div class="col-sm-4">
+                   
+                   <div class="box same-height">
+                       
+                       <div class="icon">
+                           
+                           <i class="fa fa-thumbs-up"></i>
+                           
+                       </div>
+                       
+                       <h3><a href="#">100% chất liệu thiên nhiên</a></h3>
+                       
+                       <p>Thời trang TQT xây dựng một trong những thương hiệu “THỜI TRANG BỀN VỮNG” đầu tiên tại Việt Nam.</p>
+                       
+                   </div>
+                   
+               </div>
+           </div>
+        </div>
 </div>

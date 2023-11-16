@@ -4,9 +4,14 @@
     $query_sua_sp = mysqli_query($mysqli,$sql_sua_sp);
 ?>
 
-<h2 class="pt-2 mt-2">SỬA SẢN PHẨM</h2>
+<div class="row pt-4">
+    <h2 class="col-2 ">
+    <a class="btn btn-warning"  href="index.php?action=quanlysanpham&query=lietke"><i class="fa-solid fa-arrow-left"></i></a>
+    </h2>
+    <h2 class="col-10 ">SỬA SẢN PHẨM</h2>
+</div>
 
-<table class="table border border-dark"  style="background-color: white">
+<table class="table table-bordered border border-success table-success"  style="background-color: white">
     
     <form action="modules/quanlysp/xuly.php?idsanpham=<?php echo $_GET['idsanpham'] ?>" enctype="multipart/form-data" method="POST">
         <?php 
@@ -14,22 +19,22 @@
         ?>
         <tbody>
             <tr>
-                <th scope="row">Tên sản phẩm </th>
+                <th class="col border border-success">Tên sản phẩm </th>
                 <td><input type="text" name="tensanpham" value="<?php echo $dong["tensanpham"] ?>"></td>
             </tr>
 
             <tr>
-                <th scope="row">Mã sản phẩm </th>
+                <th class="col border border-success">Mã sản phẩm </th>
                 <td><input type="text" name="masp" value="<?php echo $dong["masp"] ?>"></td>
             </tr>
 
             <tr>
-                <th scope="row">Giá sản phẩm </th>
+                <th class="col border border-success">Giá sản phẩm </th>
                 <td><input type="text" name="giasp" value="<?php echo $dong["giasp"] ?>"></td>
             </tr>
 
             <tr>
-                <th scope="row">Chọn mức giá sản phẩm</th>
+                <th class="col border border-success">Chọn mức giá sản phẩm</th>
                 <td>
                     <select name="giasanpham">
                     <?php 
@@ -53,12 +58,12 @@
 
 
             <tr>
-                <th scope="row">Số lượng </th>
+                <th class="col border border-success">Số lượng </th>
                 <td><input type="text" name="soluong" value="<?php echo $dong["soluong"] ?>"></td>
             </tr>
 
             <tr>
-                <th scope="row">Hình ảnh </th>
+                <th class="col border border-success">Hình ảnh </th>
                 <td>
                     <input type="file" name="hinhanh" >
                     <img src="modules/quanlysp/uploads/<?php echo $dong["hinhanh"] ?>" width="150px" alt="">
@@ -66,18 +71,18 @@
             </tr>
 
             <tr>
-                <th scope="row"> Tóm tắt </th>
+                <th class="col border border-success"> Tóm tắt </th>
                 <td><textarea rows="2" cols="50" style="resize:none"  name="tomtat" ><?php echo $dong["tomtat"] ?> </textarea></td>
             </tr>
 
             <tr>
-                <th scope="row"> Miêu tả </th>
+                <th class="col border border-success"> Miêu tả </th>
                 <td><textarea rows="5" cols="50" style="resize:none" name="noidung"  ><?php echo $dong["noidung"] ?></textarea></td>
             </tr>
 
 
             <tr>
-                <th scope="row">Chọn danh mục sản phẩm</th>
+                <th class="col border border-success">Chọn danh mục sản phẩm</th>
                 <td>
                     <select name="danhmuc">
                         <?php 
@@ -100,7 +105,7 @@
             </tr>
 
             <tr>
-                <td colspan="2"><input type="submit" name="suasanpham" value="Sửa sản phẩm"></td>
+                <td colspan="2"><input type="submit" name="suasanpham" class="btn btn-dark" value="Sửa sản phẩm"></td>
             </tr>
         </tbody>
         <?php

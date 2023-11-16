@@ -6,20 +6,21 @@
      AND cart_details.code_cart = '$_GET[code]'  ORDER BY cart_details.id_cart_details DESC ";
     $query_lietke_dh = mysqli_query($mysqli,$sql_lietke_dh);
 ?>
-<div>
-    <h2 class="pt-2 mt-2">XEM ĐƠN HÀNG</h2>
+<div class="row pt-4">
+    <h2 class="col-2" ><a  href="index.php?action=quanlydonhang&query=lietke"><i class="fa-solid fa-arrow-left"></i></a></h2>
+    <h2 class="col-10 ">XEM ĐƠN HÀNG</h2>
 </div>
 
 
-    <table class="table table-bordered table-info" style="background-color: white;">
+    <table class="table table-bordered border border-dark table-info" style="background-color: white;">
         <thead>
             <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Mã đơn hàng</th>
-            <th scope="col">Tên sản phẩm</th>
-            <th scope="col">Số lượng</th>
-            <th scope="col">Đơn giá</th>
-            <th scope="col">Thành tiền</th>
+            <th  class="col border border-success">ID</th>
+            <th  class="col border border-success">Mã đơn hàng</th>
+            <th  class="col border border-success">Tên sản phẩm</th>
+            <th  class="col border border-success">Số lượng</th>
+            <th  class="col border border-success">Đơn giá</th>
+            <th  class="col border border-success">Thành tiền</th>
         
             </tr>
         </thead>
@@ -33,20 +34,20 @@
         $tongtien += $thanhtien;
     ?>
         <tbody>
-            <tr>
-            <td><?php echo $i ?></td>
-            <td><?php echo $row["code_cart"]  ?></td>
-            <td><?php echo $row["tensanpham"]  ?></td>
-            <td><?php echo $row["soluongmua"]  ?></td>
-            <td><?php echo number_format( $row["giasp"],0,',','.' ).'vnd' ?></td>
-            <td><?php echo  number_format( $row["giasp"]*$row["soluongmua"],0,',','.' ).'vnd' ?></td>
+            <tr >
+            <td  class="col border border-success"><?php echo $i ?></td>
+            <td  class="col border border-success"><?php echo $row["code_cart"]  ?></td>
+            <td  class="col border border-success"><?php echo $row["tensanpham"]  ?></td>
+            <td  class="col border border-success"><?php echo $row["soluongmua"]  ?></td>
+            <td  class="col border border-success"><?php echo number_format( $row["giasp"],0,',','.' ).'vnd' ?></td>
+            <td  class="col border border-success"><?php echo  number_format( $row["giasp"]*$row["soluongmua"],0,',','.' ).'vnd' ?></td>
             
         </tr>
     <?php 
      }
     ?>
 
-            <td colspan="6">
+            <td  class="col border border-success" colspan="6">
                 <p>Tổng tiền: <?php echo number_format( $tongtien,0,',','.' ).'vnd' ?> </p>
             </td>
   </tbody>

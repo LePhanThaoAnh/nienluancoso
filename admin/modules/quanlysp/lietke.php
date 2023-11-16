@@ -3,20 +3,29 @@
     $sql_lietke_sp = "SELECT * FROM sanpham,danhmuc WHERE sanpham.id_danhmuc = danhmuc.id ORDER BY id_sanpham DESC";
     $query_lietke_sp = mysqli_query($mysqli,$sql_lietke_sp);
 ?>
+<div class="row pt-4">
+<h2 class=" ">LIỆT KÊ SẢN PHẨM</h2>
+</div>
 
-<h2>LIỆT KÊ SẢN PHẨM</h2>
+<div class="row ">
+    <a class="col-2 btn btn-warning" href="index.php?action=quanlysanpham&query=them">THÊM SẢN PHẨM</a>
 
-    <table class="table table-bordered table-info" style="background-color: white;">
+
+<h2 class="col-10 "></h2>
+</div>
+
+
+    <table class="table table-bordered border border-dark table-info" style="background-color: white;">
         <thead>
             <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Tên sản phẩm</th>
-            <th scope="col">Hình ảnh</th>
-            <th scope="col">Giá sản phẩm</th>
-            <th scope="col">Số lượng</th>
-            <th scope="col">Mã sản phẩm</th>
-            <th scope="col">Danh mục</th>
-            <th scope="col">Quản lý</th>
+            <th class="col border border-success" >ID</th>
+            <th class="col border border-success" >Tên sản phẩm</th>
+            <th class="col border border-success" >Hình ảnh</th>
+            <th class="col border border-success" >Giá sản phẩm</th>
+            <th class="col border border-success" >Số lượng</th>
+            <th class="col border border-success" >Mã sản phẩm</th>
+            <th class="col border border-success" >Danh mục</th>
+            <th class="col border border-success" >Quản lý</th>
             </tr>
         </thead>
     <?php
@@ -27,15 +36,15 @@
     ?>
         <tbody>
             <tr>
-            <td><?php echo $i ?></td>
-            <td><?php echo $row["tensanpham"]  ?></td>
-            <td><img src="admin/modules/quanlysp/uploads/"<?php echo $row["hinhanh"]?> width="250px"></td>
-            <td><?php echo $row["giasp"]  ?></td>
-            <td><?php echo $row["soluong"]  ?></td>
-            <td><?php echo $row["masp"]  ?></td>
-            <td><?php echo $row["tendanhmuc"]  ?></td>
-            <td>
-                <a class="btn btn-primary" href="?action=quanlysanpham&query=sua&idsanpham=<?php echo $row["id_sanpham"] ?>">SỬA</a> | 
+            <td class="col border border-success"><?php echo $i ?></td>
+            <td class="col border border-success"><?php echo $row["tensanpham"]  ?></td>
+            <td class="col border border-success"><img src="admin/modules/quanlysp/uploads/"<?php echo $row["hinhanh"]?> width="250px"></td>
+            <td class="col border border-success"><?php echo $row["giasp"]  ?></td>
+            <td class="col border border-success"><?php echo $row["soluong"]  ?></td>
+            <td class="col border border-success"><?php echo $row["masp"]  ?></td>
+            <td class="col border border-success"><?php echo $row["tendanhmuc"]  ?></td>
+            <td class="col border border-success">
+                <a class="btn btn-info" href="?action=quanlysanpham&query=sua&idsanpham=<?php echo $row["id_sanpham"] ?>">SỬA</a> | 
                 <a class="btn btn-danger" onclick=" return confirm('Bạn có chắc muốn xóa không')" href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row["id_sanpham"] ?>">XÓA </a>
             </td>
         </tr>

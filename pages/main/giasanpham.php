@@ -7,7 +7,28 @@
     $row_title = mysqli_fetch_array($query_cate);
 
 ?>
-<h3> Giá sản phẩm : <?php echo $row_title["khoanggia"] ?> </h3>
+<style>
+    /* #tieude{
+    font-weight: bold;
+    font-size:40px;
+    font-family: Georgia; */
+
+    .tieude{
+        text-align: center;
+        font-family: Georgia;
+        font-weight: bold;
+        font-size: 40px;
+        border: 2px double ;
+        border-radius: 3px;
+        background-color: white;
+  }
+    #ten{
+        font-family: 'Courier New', Courier, monospace;
+        box-shadow:  0px 2px 10px rgba(0, 0, 0,0.7);;
+    }
+
+</style>
+<h3 class="text-center p-2 ml-5 mr-5 tieude rounded" id="ten"> Giá sản phẩm : <?php echo $row_title["khoanggia"] ?> vnd </h3>
 <div class="row">
                 <?php
                     while($row_pro = mysqli_fetch_array($query_pro)){

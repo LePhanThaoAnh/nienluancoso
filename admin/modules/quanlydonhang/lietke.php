@@ -7,17 +7,17 @@
 
 <h2 class="pt-2 mt-2">LIỆT KÊ ĐƠN HÀNG</h2>
 
-    <table class="table table-bordered table-info" style="background-color: white;">
+    <table class="table border border-success rounded table-success" style="background-color: white;">
         <thead>
             <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Mã đơn hàng</th>
-            <th scope="col">Tên khách hàng</th>
-            <th scope="col">Địa chỉ</th>
-            <th scope="col">Email</th>
-            <th scope="col">Số điện thoại</th>
-            <th scope="col">Tình trạng</th>
-            <th scope="col">Quản lý</th>
+            <th class="col border border-success">ID</th>
+            <th class="col border border-success">Mã đơn hàng</th>
+            <th class="col border border-success">Tên khách hàng</th>
+            <th class="col border border-success">Địa chỉ</th>
+            <th class="col border border-success">Email</th>
+            <th class="col border border-success">Số điện thoại</th>
+            <th class="col border border-success">Tình trạng</th>
+            <th class="col border border-success">Quản lý</th>
             </tr>
         </thead>
     <?php
@@ -28,14 +28,14 @@
     ?>
         <tbody>
             <tr>
-            <td><?php echo $i ?></td>
-            <td><?php echo $row["code_cart"]  ?></td>
-            <td><?php echo $row["tenkhachhang"]  ?></td>
-            <td><?php echo $row["diachi"]  ?></td>
-            <td><?php echo $row["email"]  ?></td>
-            <td><?php echo $row["sodienthoai"]  ?></td>
+            <td class="col border border-success"  ><?php echo $i ?></td>
+            <td class="col border border-success" ><?php echo $row["code_cart"]  ?></td>
+            <td class="col border border-success" ><?php echo $row["tenkhachhang"]  ?></td>
+            <td class="col border border-success" ><?php echo $row["diachi"]  ?></td>
+            <td class="col border border-success" ><?php echo $row["email"]  ?></td>
+            <td class="col border border-success" ><?php echo $row["sodienthoai"]  ?></td>
             
-            <td>
+            <td class="col border border-success" >
                 <?php 
                 if($row["cart_status"]== 1){
                         // Khi trạng thái bằng 1 sẽ là đơn hàng mới và lấy code_cart trong bảng cart của đơn hàng để so sánh
@@ -45,7 +45,7 @@
                 }
                 ?>
             </td>
-            <td>
+            <td class="col border border-success">
                 <a href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row["code_cart"] ?>">Xem đơn hàng</a> 
             </td>
         </tr>

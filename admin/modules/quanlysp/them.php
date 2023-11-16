@@ -1,5 +1,10 @@
-<h2>THÊM SẢN PHẨM</h2>
-<table class="table border border-dark" style="background-color: white">
+<div class="row pt-4">
+    <h2 class="col-2 ">
+    <a class="btn btn-warning"  href="index.php?action=quanlysanpham&query=lietke"><i class="fa-solid fa-arrow-left"></i></a>
+    </h2>
+    <h2 class="col-10 ">THÊM SẢN PHẨM</h2>
+</div>
+<table class="table table-bordered border border-success table-success" style="background-color: white">
     <form action="modules/quanlysp/xuly.php" method="POST" enctype="multipart/form-data">
         <tbody>
             <tr>
@@ -67,7 +72,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><input type="submit" name="themsanpham" value="Thêm sản phẩm"></td>
+                <td colspan="2"><input type="submit" name="themsanpham" class="btn btn-dark" value="Thêm sản phẩm"></td>
             </tr>
         </tbody>
     </form>

@@ -4,8 +4,13 @@
     $query_sua_danhmucsp = mysqli_query($mysqli,$sql_sua_danhmucsp);
 ?>
 
-<h2>SỬA DANH MỤC SẢN PHẨM</h2>
-<table class="table border border-dark" style="background-color: white" >
+<div class="row pt-4">
+    <h2 class="col-2 ">
+    <a class="btn btn-warning"  href="index.php?action=quanlydanhmucsanpham&query=lietke"><i class="fa-solid fa-arrow-left"></i></a>
+    </h2>
+    <h2 class="col-10 ">SỬA DANH MỤC</h2>
+</div>
+<table class="table table-bordered border border-dark table-success" style="background-color: white" >
     <form action="modules/quanlydanhmuc/xuly.php?iddanhmuc=<?php echo $_GET['iddanhmuc'] ?>" method="POST">
         <?php 
         while($dong = mysqli_fetch_array($query_sua_danhmucsp)){
@@ -21,7 +26,7 @@
                 
             </tr>
             <tr>
-                <td class="border border-dark" colspan="2"><input type="submit" name="suadanhmuc" value="Sửa danh mục sản phẩm"></td>
+                <td class="border border-dark" colspan="2"><input type="submit" class="btn btn-dark" name="suadanhmuc" value="Sửa danh mục sản phẩm"></td>
             </tr>
         </tbody>
         <?php

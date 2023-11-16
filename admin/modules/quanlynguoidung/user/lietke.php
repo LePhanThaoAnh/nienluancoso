@@ -6,22 +6,21 @@
 
 <div class="container">
     <div class="row">
-        <h2 class="col-9 p-4 mt-2 mb-2">LIỆT KÊ DANH SÁCH KHÁCH HÀNG</h2>
-        <h3  class="col-3 p-4 mt-2 mb-2"> <a href="?action=quanlynguoidung&query=them">Quản lý admin</a> </h3>
+        <h2 class=" p-4 mt-2 mb-2">LIỆT KÊ DANH SÁCH KHÁCH HÀNG</h2>
     </div>
       
         
         
 </div>
 
-    <table class="table table-bordered table-info" style="background-color: white;">
+    <table class="table table-bordered border border-success table-success" style="background-color: white;">
         <thead>
             <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Tên khách hàng</th>
-            <th scope="col">Email</th>
-            <th scope="col">Địa chỉ</th>
-            <th scope="col">Số điện thoại</th>
+            <th class="col border border-success">ID</th>
+            <th class="col border border-success">Tên khách hàng</th>
+            <th class="col border border-success">Email</th>
+            <th class="col border border-success">Địa chỉ</th>
+            <th class="col border border-success">Số điện thoại</th>
             </tr>
         </thead>
     <?php
@@ -32,11 +31,11 @@
     ?>
         <tbody>
             <tr>
-            <td><?php echo $i ?></td>
-            <td><?php echo $row["tenkhachhang"]  ?></td>
-            <td><?php echo $row["email"]  ?></td>
-            <td><?php echo $row["diachi"]  ?></td>
-            <td><?php echo $row["sodienthoai"]  ?></td>
+            <td class="col border border-success" ><?php echo $i ?></td>
+            <td class="col border border-success" ><?php echo $row["tenkhachhang"]  ?></td>
+            <td class="col border border-success" ><?php echo $row["email"]  ?></td>
+            <td class="col border border-success" ><?php echo $row["diachi"]  ?></td>
+            <td class="col border border-success" ><?php echo $row["sodienthoai"]  ?></td>
         </tr>
     <?php 
      }

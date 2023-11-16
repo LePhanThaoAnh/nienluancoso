@@ -12,10 +12,13 @@
 
                 if($tam =='quanlydanhmucsanpham' && $query=='them'){
                     include("modules/quanlydanhmuc/them.php");
-                    include("modules/quanlydanhmuc/lietke.php");
+                    
 
                 }elseif($tam =='quanlydanhmucsanpham' && $query=='sua' ){
                     include("modules/quanlydanhmuc/sua.php");
+
+                }elseif($tam =='quanlydanhmucsanpham' && $query=='lietke' ){
+                    include("modules/quanlydanhmuc/lietke.php");
 
                 }elseif($tam =='quanlynguoidung' && $query=='them' ){
                     include("modules/quanlynguoidung/admin/them.php");
@@ -27,10 +30,19 @@
                 }elseif($tam =='quanlynguoidung' && $query=='user' ){
                     include("modules/quanlynguoidung/user/lietke.php");
 
+                }elseif($tam =='quanlyadmin' && $query=='admin' ){
+                    include("modules/quanlynguoidung/admin/lietke.php");
+
+                }elseif($tam =='quanlyadmin' && $query=='them' ){
+                    include("modules/quanlynguoidung/admin/them.php");
+
                 }elseif($tam =='quanlysanpham' && $query=='them' ){
                     include("modules/quanlysp/them.php");
-                    include("modules/quanlysp/lietke.php");
+        
 
+                }elseif($tam =='quanlysanpham' && $query=='lietke' ){
+                    include("modules/quanlysp/lietke.php");
+                    
                 }elseif($tam =='quanlysanpham' && $query=='sua' ){
                     include("modules/quanlysp/sua.php");
                     

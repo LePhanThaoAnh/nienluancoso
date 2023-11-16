@@ -43,13 +43,18 @@
 
 <body id="body">
     <!--Include file kết nối database-->
+    <style>
+        a{
+    text-decoration: none;
+        }
+    </style>
     
     <?php include("./admin/connect/connect.php") ?>
     <!-- header-->
     <?php include("pages/header.php") ?>
     
     <!-- Main -->
-    <div class="container content "  style="margin-bottom:100px;  ">
+    <div class="container content "  style="margin-bottom:250px;  ">
 
         <div class="row">
              

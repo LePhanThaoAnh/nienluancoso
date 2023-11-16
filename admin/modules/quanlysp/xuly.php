@@ -22,7 +22,7 @@
             '".$danhmuc."','".$giasanpham."')";
             mysqli_query($mysqli,$sql_them);
             move_uploaded_file($hinhanh_tmp,'uploads/'.$hinhanh);
-            header('Location:../../index.php?action=quanlysanpham&query=them');
+            header('Location:../../index.php?action=quanlysanpham&query=lietke');
 
         }elseif(isset($_POST['suasanpham'])){
             $tensanpham= $_POST['tensanpham'];
@@ -51,7 +51,7 @@
           
             }
              mysqli_query($mysqli,$sql_update);
-            header('Location:../../index.php?action=quanlysanpham&query=them');
+            header('Location:../../index.php?action=quanlysanpham&query=lietke');
 
         }else{
             $id=$_GET['idsanpham'];
@@ -62,7 +62,7 @@
             }
             $sql_xoa = "DELETE FROM sanpham WHERE id_sanpham='".$id."'"; 
             mysqli_query($mysqli,$sql_xoa);
-            header('Location:../../index.php?action=quanlysanpham&query=them');
+            header('Location:../../index.php?action=quanlysanpham&query=lietke');
         }
 
         

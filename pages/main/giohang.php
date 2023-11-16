@@ -5,7 +5,7 @@
   // unset($_SESSION['dangky']);
     if(isset($_SESSION["dangky"])){
                   // hiện tên người đăng nhập từ file login
-      echo 'xin chào: '.'<span style="color:red;">'.$_SESSION["dangky"].'</span>' ;
+      echo '<h2 class="m-4 btn btn-success" >Xin chào: '.'<span  style="">'.$_SESSION["dangky"].'</span></h2>' ;
     }
     
 ?>
@@ -77,7 +77,7 @@
             <?php 
               if(isset($_SESSION["dangky"])){
             ?>
-                  <p class="font-weight-bold" style="text-align:center"><a href="pages/main/thanhtoan.php">ĐẶT HÀNG</a></p>
+                  <p class="font-weight-bold  btn btn-dark "  style="text-align:center; "><a href="pages/main/thanhtoan.php">ĐẶT HÀNG</a></p>
             <?php
               }else{
             ?>
