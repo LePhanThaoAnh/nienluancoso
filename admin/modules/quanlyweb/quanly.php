@@ -16,7 +16,7 @@
         <tbody>
             <tr class="table-success rounded">
                 <th class="border border-white " scope="row">Thông tin liên hệ</th>
-                <td class="border border-white " ><textarea name="thongtinlienhe" id="" cols="30" rows="10"><?php echo $dong["thongtinlienhe"] ?></textarea></td>
+                <td class="border border-white " ><textarea name="thongtinlienhe" style="height: ;" id="" cols="30" rows="10"><?php echo $dong["thongtinlienhe"] ?></textarea></td>
             </tr>
            
             <tr class="table-success  rounded">

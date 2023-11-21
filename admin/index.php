@@ -93,24 +93,56 @@
                       </a>
                     </li>
 
+                    <li class="nav-item">
+                      <a class="nav-link text-white " href="index.php?action=quanlynguoidung&query=user">
+                        
+                          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">view_in_ar</i>
+                          </div>
+                        
+                        <span class="nav-link-text ms-1">Tài khoản người dùng</span>
+                      </a>
+                    </li>
+
+                    
+                    <li class="nav-item">
+                      <a class="nav-link text-white " href="index.php?action=quanlyadmin&query=admin">
+                        
+                          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">view_in_ar</i>
+                          </div>
+                        
+                        <span class="nav-link-text ms-1">Quản lý tài khoản admin </span>
+                      </a>
+                    </li>
                       
                     <li class="nav-item">
                       <a class="nav-link text-white " href="index.php?action=quanlydanhmucsanpham&query=lietke">
                         
                           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">table_view</i>
+                            <i class="material-icons opacity-10">view_in_ar</i>
                           </div>
                         
                         <span class="nav-link-text ms-1">Danh mục</span>
                       </a>
                     </li>
 
+                    <li class="nav-item">
+                      <a class="nav-link text-white " href="index.php?action=quanlygiatien&query=lietke">
+                        
+                          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"> receipt_long</i>
+                          </div>
+                        
+                        <span class="nav-link-text ms-1">Giá tiền</span>
+                      </a>
+                    </li>
                       
                     <li class="nav-item">
                       <a class="nav-link text-white " href="index.php?action=quanlysanpham&query=lietke">
                         
                           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">receipt_long</i>
+                            <i class="material-icons opacity-10">view_in_ar</i>
                           </div>
                         
                         <span class="nav-link-text ms-1">Sản phẩm</span>
@@ -131,27 +163,8 @@
                       </a>
                     </li>
 
-                    <li class="nav-item">
-                      <a class="nav-link text-white " href="index.php?action=quanlynguoidung&query=user">
-                        
-                          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">view_in_ar</i>
-                          </div>
-                        
-                        <span class="nav-link-text ms-1">Tài khoản người dùng</span>
-                      </a>
-                    </li>
+                    
 
-                    <li class="nav-item">
-                      <a class="nav-link text-white " href="index.php?action=quanlyadmin&query=admin">
-                        
-                          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">view_in_ar</i>
-                          </div>
-                        
-                        <span class="nav-link-text ms-1">Quản lý tài khoản admin </span>
-                      </a>
-                    </li>
 
                     <li class="nav-item">
                       <a class="nav-link text-white " href="index.php?action=quanlyweb&query=capnhat">

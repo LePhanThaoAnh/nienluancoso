@@ -1,4 +1,4 @@
-<div class="col-lg-10">
+<div class="col">
 
         <nav class="navbar navbar-light bg-light justify-content-between border border-dark m-2 rounded">
                 <a class="navbar-brand"></a>

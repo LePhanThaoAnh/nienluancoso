@@ -119,7 +119,7 @@ $(document).ready(function(){
                        
                        <h3><a href="#">Phục vụ khách hàng tốt nhất  </a></h3>
                        
-                       <p>Thời trang TQT xây dựng một trong những thương hiệu “THỜI TRANG BỀN VỮNG” đầu tiên tại Việt Nam.</p>
+                       <p>Cửa hàng đèn AnhLight luôn sẵn sàng giải đáp mọi thắc mắc của quý khách hàng.</p>
                        
                    </div>
                    
@@ -136,7 +136,7 @@ $(document).ready(function(){
                        
                        <h3><a href="#">Giá tốt nhất trên thị trường</a></h3>
                        
-                       <p>Thời trang TQT xây dựng một trong những thương hiệu “THỜI TRANG BỀN VỮNG” đầu tiên tại Việt Nam.</p>
+                       <p>Cửa hàng đèn AnhLight đảm bảo rằng cho quý khách hàng những mức giá tốt nhất.</p>
                        
                    </div>
                </div>
@@ -152,9 +152,9 @@ $(document).ready(function(){
                            
                        </div>
                        
-                       <h3><a href="#">100% chất liệu thiên nhiên</a></h3>
+                       <h3><a href="#">Đa dạng mẫu mã và giá tiên</a></h3>
                        
-                       <p>Thời trang TQT xây dựng một trong những thương hiệu “THỜI TRANG BỀN VỮNG” đầu tiên tại Việt Nam.</p>
+                       <p>Cửa hàng đèn AnhLight với nhiều mẫu mã, thiết kế và giá tiền giúp quý khách dễ dàng chọn lựa</p>
                        
                    </div>
                    

@@ -28,7 +28,7 @@
     }
 
 </style>
-<h3 class="text-center p-2 ml-5 mr-5 tieude rounded" id="ten"> Giá sản phẩm : <?php echo $row_title["khoanggia"] ?> vnd </h3>
+<h3 class="text-center p-2 m-0 m-0 tieude rounded" id="ten"> Giá sản phẩm : <?php echo $row_title["khoanggia"] ?> </h3>
 <div class="row">
                 <?php
                     while($row_pro = mysqli_fetch_array($query_pro)){

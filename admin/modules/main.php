@@ -20,6 +20,15 @@
                 }elseif($tam =='quanlydanhmucsanpham' && $query=='lietke' ){
                     include("modules/quanlydanhmuc/lietke.php");
 
+                }elseif($tam =='quanlygiatien' && $query=='them' ){
+                    include("modules/quanlygiatien/them.php");
+
+                }elseif($tam =='quanlygiatien' && $query=='sua' ){
+                    include("modules/quanlygiatien/sua.php");
+
+                }elseif($tam =='quanlygiatien' && $query=='lietke' ){
+                    include("modules/quanlygiatien/lietke.php");
+
                 }elseif($tam =='quanlynguoidung' && $query=='them' ){
                     include("modules/quanlynguoidung/admin/them.php");
                     include("modules/quanlynguoidung/admin/lietke.php");

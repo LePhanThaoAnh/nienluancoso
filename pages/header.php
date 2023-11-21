@@ -17,9 +17,9 @@
     }
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top "  style="height: 100px" style="font-family: 'UTMSwissCondensed';">
-        <a id="tieude" class="navbar-brand pl-4" href="https://nentang.vn">ANHLIGHT SHOP</a>
+       
         <div class="container " height="50px" style="font-weight: bold; font-size:18px">
-        
+        <a id="tieude" class="navbar-brand pl-4" href="https://nentang.vn">ALS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,10 +36,8 @@
                         </a>
                     </li>
 
-
-                    
-
-                    <div class="dropdown " >
+                    <!-- Hiển thị danh mục -->
+                    <div class="dropdown  " >
                     <button class="btn btn-info mr-2 dropdown-toggle" style="height: 42px;"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Danh mục sản phẩm
                     </button>
@@ -62,7 +60,31 @@
                     </div>
                     </div>
 
+                        
+                    <!-- Hiển thị lọc theo giá -->
+                    <div class="dropdown " >
+                    <button class="btn btn-info mr-2 dropdown-toggle" style="height: 42px;"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lọc theo giá
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 270px">
+                        <?php 
+                        $sql_giasp ="SELECT * FROM giasanpham ORDER BY id_gia DESC";
+                        $query_giasp = mysqli_query($mysqli,$sql_giasp);
+                        while($row = mysqli_fetch_array($query_giasp)){
+                        ?>
 
+                        <li class="nav-item active">
+                            <a class="nav-link" style="text-decoration: none" href="index.php?quanly=giasanpham&id=<?php echo ($row["id_gia"]) ?>" class="list-group-item border border-dark">
+                            <?php echo ($row["khoanggia"]) ?></a>
+                        </li>
+
+                        <?php 
+                            }
+                        ?>
+                    </div>
+                    </div>
+
+                    <!-- giỏ hàng -->
                     <li class="nav-item active ">
                         <a class="nav-link btn btn-info mr-2" href="index.php?quanly=giohang"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
                     </li>

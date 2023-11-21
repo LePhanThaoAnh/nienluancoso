@@ -62,7 +62,11 @@
             <?php include("pages/sidebar/sidebar.php") ?>
 
             <!-- Maincontent  -->
-            <?php include("pages/main.php") ?>
+            <div class="col-10">
+                <?php include("pages/main.php") ?>
+            
+            </div>
+            
             
             <!-- /.col-lg-9 -->
 

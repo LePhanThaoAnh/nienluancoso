@@ -3,7 +3,18 @@
     $query_chitiet = mysqli_query($mysqli,$sql_chitiet);
     while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
 ?>
-<h2 class="text-uppercase ">Chi tiết sản phẩm <?php echo $row_chitiet["masp"] ?> </h2>
+<style>
+  .tieude{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        border: 2px double ;
+        border-radius: 3px;
+        background-color: white;
+  }
+</style>
+<h2 class="text-uppercase  tieude">Chi tiết sản phẩm <?php echo $row_chitiet["masp"] ?> </h2>
 
     <div class="container " style="">
         <div class="row border border-dark mb-4 rounded" style="background-color: white; ">
