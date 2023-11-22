@@ -7,16 +7,17 @@
 
 <h2 class="pt-2 mt-2">LIỆT KÊ ĐƠN HÀNG</h2>
 
-    <table class="table border border-success rounded table-success" style="background-color: white;">
+    <table class="table border border-success rounded table-success" style="background-color: white;margin-left: -50px">
         <thead>
             <tr>
-            <th class="col border border-success">ID</th>
-            <th class="col border border-success">Mã đơn hàng</th>
+            <th class="col-1 border border-success">ID</th>
+            <th class="col-1 border border-success">Mã đơn hàng</th>
             <th class="col border border-success">Tên khách hàng</th>
             <th class="col border border-success">Địa chỉ</th>
             <th class="col border border-success">Email</th>
             <th class="col border border-success">Số điện thoại</th>
             <th class="col border border-success">Tình trạng</th>
+            <th class="col border border-success">Ngày đặt</th>
             <th class="col border border-success">Quản lý</th>
             </tr>
         </thead>
@@ -45,6 +46,7 @@
                 }
                 ?>
             </td>
+            <td class="col border border-success"  ><?php echo $row["cart_date"]  ?></td>
             <td class="col border border-success">
                 <a href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row["code_cart"] ?>">Xem đơn hàng</a> 
             </td>

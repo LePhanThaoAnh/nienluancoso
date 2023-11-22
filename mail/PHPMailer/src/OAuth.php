@@ -100,7 +100,7 @@ class OAuth implements OAuthTokenProvider
      */
     protected function getGrant()
     {
-        return new RefreshToken();
+        // return new RefreshToken();
     }
 
     /**

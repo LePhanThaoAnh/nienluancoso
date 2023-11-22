@@ -15,7 +15,7 @@
 </div>
 
 
-    <table class="table table-bordered border border-dark table-info" style="background-color: white;">
+    <table class="table table-bordered border border-dark table-info " style="background-color: white; ">
         <thead>
             <tr>
             <th class="col border border-success" >ID</th>
@@ -38,7 +38,7 @@
             <tr>
             <td class="col border border-success"><?php echo $i ?></td>
             <td class="col border border-success"><?php echo $row["tensanpham"]  ?></td>
-            <td class="col border border-success"><img src="admin/modules/quanlysp/uploads/"<?php echo $row["hinhanh"]?> width="250px"></td>
+            <td class="col border border-success"><img src="modules/quanlysp/uploads/<?php echo $row["hinhanh"]?>" width="200px" height="200px"></td>
             <td class="col border border-success"><?php echo $row["giasp"]  ?></td>
             <td class="col border border-success"><?php echo $row["soluong"]  ?></td>
             <td class="col border border-success"><?php echo $row["masp"]  ?></td>

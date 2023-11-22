@@ -211,7 +211,7 @@
 
           </main>
      -->
-     </div>
+        </div>
                   
           <div class="col-10"> 
                   <?php include("modules/main.php") ?>
@@ -219,7 +219,7 @@
            
           </div>  
 
-      </div>
+     
 
 <!--   Core JS Files   -->
     <script src="./assets/js/core/popper.min.js" ></script>
@@ -228,8 +228,11 @@
     <script src="./assets/js/plugins/smooth-scrollbar.min.js" ></script>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+  
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js" integrity="sha512-6Cwk0kyyPu8pyO9DdwyN+jcGzvZQbUzQNLI0PadCY3ikWFXW9Jkat+yrnloE63dzAKmJ1WNeryPd1yszfj7kqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       
@@ -239,26 +242,75 @@
 
     <!-- Thống kê -->
     <script type="text/javascript">
-        new Morris.Area({
-            // ID of the element in which to draw the chart.
-            element: 'chart',
-            // Chart data records -- each entry in this array corresponds to a point on
-            // the chart.
-            data: [
-                { year: '2008', value: 20 },
-                { year: '2009', value: 10 },
-                { year: '2010', value: 5 },
-                { year: '2011', value: 5 },
-                { year: '2012', value: 20 }
-            ],
-            // The name of the data record attribute that contains x-values.
-            xkey: 'year',
-            // A list of names of data record attributes that contain y-values.
-            ykeys: ['value','order'],
-            // Labels for the ykeys -- will be displayed when you hover over the
-            // chart.
-            labels: ['Value']
-            });
+      // Mỗi lần load trang sẽ chạy hàm thống kê
+      // $(document).ready(function(){
+        // thongke();
+        //   var char = new Morris.Area({
+        //     element: 'chart',
+        //     xkey: 'year',
+        //     ykeys: ['date', 'order','sales','quantity'],
+        //     labels: ['Đơn hàng','Doanh thu','Số lượng bán ra']
+        //   });
+
+          // $('select-date').change(function(){
+          //   var thoigian = $(this).val();
+          //   if(thoigian=='7ngay'){
+          //     var text = '7 ngày qua';
+          //   }else if(thoigian=='28ngay'){
+          //     var text = '28 ngày qua';
+          //   }else if(thoigian=='90ngay'){
+          //     var text = '90 ngày qua';
+          //   }else{
+          //     var text = '365 ngày qua';
+          //   }
+          //   $('#text-date').text(text);
+          //   $.ajax({
+          //     url:"modules/thongke.php",
+          //     method:"POST",
+          //     dataType:"JSON",
+          //     data:{thoigian:thoigian},
+          //     success: function(data)
+          //     {
+          //       char.setData(data);
+          //       $('#text-date').text(text);
+          //     }
+          //   });
+          // });
+      //   function thongke(){
+      //     var text = '365 ngày qua';
+      //     $('#text-date').text(text);
+      //     $.ajax({
+      //       url:"modules/thongke.php",
+      //       method:"POST",
+      //       dataType:"JSON",
+      //       success: function(data)
+      //       {
+      //         char.setData(data);
+      //         $('#text-date').text(text);
+      //       }
+      //     });
+      //   }
+      // });
+
+      new Morris.Line({
+
+  element: 'chart',
+
+  data: [
+    { year: '2023-10-1', order: 5, sales : 400, quantity:2000 },
+    { year: '2023-10-5', order: 4, sales : 500, quantity:2000 },
+    { year: '2023-10-10', order: 15, sales : 500, quantity:2000 },
+    { year: '2023-11-1', order: 35, sales : 5400, quantity:2000 },
+    { year: '2023-12-1', order: 25, sales : 3500, quantity:21000 },
+  ],
+  
+
+  xkey: 'year',
+  ykeys: ['date', 'order','sales','quantity'],
+  labels: ['Đơn hàng','Doanh thu','Số lượng bán ra']
+});
+      
+           
     </script>
 
 <script>

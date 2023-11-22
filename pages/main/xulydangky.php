@@ -85,6 +85,7 @@
       echo "<a href='javascript: history.go(-1)'>Trở lại trang vừa rồi</a>";
       $_SESSION["dangky"] = $username;
       $_SESSION["id_khachhang"] = mysqli_insert_id($mysqli);
+      $_SESSION["email"] = $email;
     //   echo "<script>window.open('index.php','_SELF')</script> ";
    
   }

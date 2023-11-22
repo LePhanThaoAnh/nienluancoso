@@ -27,6 +27,7 @@
             $row_data = mysqli_fetch_array($row);
             // lấy được tên khách hàng ra để hiện qua bên giỏ hàng chào mừng khách hàng.
             $_SESSION["dangky"] = $row_data["tenkhachhang"];
+            $_SESSION["email"] = $row_data['email'];
             $_SESSION["id_khachhang"] = $row_data["id_dangky"];
             echo "<script>window.open('index.php','_SELF')</script> ";
 
