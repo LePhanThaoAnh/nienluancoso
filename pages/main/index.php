@@ -48,14 +48,14 @@
         text-align: center;
     }
 </style>
-<h3 class="text-center p-2 ml-5 mr-5 tieude rounded" >SẢN PHẨM MỚI NHẤT</h3>
-<div class="row border border-white m-1 rounded" style="background-color: white; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);">
+<h3 class="text-center pt-2 ml-5 mr-5 tieude rounded" >SẢN PHẨM MỚI NHẤT</h3>
+<div class="row  m-1 rounded" style=" ">
             <?php
                 while($row_pro = mysqli_fetch_array($query_pro)){
             ?>
                     <div class="col-lg-4 col-md-6 mb-4  mt-4 " >
-                        <div class="card h-100 border border-warning" style="box-shadow: 0px 2px 10px rgba(255, 215, 0,0.7);">
-                            <a href="index.php?quanly=sanpham&id=<?php echo $row_pro["id_sanpham"] ?>" class="text text-dark">
+                        <div class="card h-100 border border-warning " style="box-shadow: 0px 2px 10px rgba(255, 215, 0,0.7);" >
+                            <a href="index.php?quanly=sanpham&id=<?php echo $row_pro["id_sanpham"] ?>" class="text text-dark" style="text-decoration: none;">
                             <div style="height: 200px; width:100%;">
                                     <img class="" style="width:100%; height: 100%;" src="../../nienluancoso/admin/modules/quanlysp/uploads/<?php echo $row_pro["hinhanh"] ?>" alt="">
                                 </div >    
@@ -77,7 +77,7 @@
 </div>
 
 
-<div style="">
+<div class="pt-2 pl-4" style="color:black">
                 <!-- đếm số dòng sản phẩm có  -->
                 <?php 
                     $sql_trang= mysqli_query($mysqli,"SELECT * FROM sanpham");
@@ -88,7 +88,7 @@
                 <nav aria-label="Page navigation example">
                         <ul class="pagination">
                             <li class="page-item">
-                            <a class="page-link" href="index.php?trang=<?php echo ($i-1) ?>" aria-label="Previous">
+                            <a style="color:black" class="page-link" href="index.php?trang=<?php echo ($i-1) ?>" aria-label="Previous">
                                 <span aria-hidden="true">&laquo;</span>
                                 <span class="sr-only">Previous</span>
                             </a>
@@ -97,14 +97,14 @@
                             <?php 
                                 for($i=1;$i<=$trang;$i++){
                             ?>
-                            <li  class="page-item <?php if($i == $page){ echo 'active'; }else{} ?> "><a  class="page-link"
+                            <li  class="page-item <?php if($i == $page){ echo 'active'; }else{} ?> "><a style="color:black" class="page-link"
                             href="index.php?trang=<?php echo $i ?>"><?php echo $i ?></a></li>
 
                             <?php 
                                 }
                             ?>
                             <li class="page-item">
-                            <a class="page-link" href="index.php?trang=<?php echo ($i+1) ?>" aria-label="Next">
+                            <a style="color:black" class="page-link" href="index.php?trang=<?php echo ($i+1) ?>" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
                                 <span class="sr-only">Next</span>
                             </a>

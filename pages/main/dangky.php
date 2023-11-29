@@ -26,7 +26,7 @@
 
 
 <form action="pages/main/xulydangky.php" method="POST">
-    <section class="h-100 bg-dark">
+    <section class="h-100 ">
       <div class="container py-2 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col">

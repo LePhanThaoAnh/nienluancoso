@@ -68,7 +68,7 @@
 
                     <div class="sidenav-header">
                       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5  end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-                      <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
+                      <a class="navbar-brand m-0" href="  " target="_blank">
                         <img src="./assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
                         <span class="ms-1 font-weight-bold text-white">ANHLIGHT SHOP</span>
                       </a>
@@ -97,7 +97,7 @@
                       <a class="nav-link text-white " href="index.php?action=quanlynguoidung&query=user">
                         
                           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">view_in_ar</i>
+                            <i class="material-icons opacity-10">person</i>
                           </div>
                         
                         <span class="nav-link-text ms-1">Tài khoản người dùng</span>
@@ -109,7 +109,7 @@
                       <a class="nav-link text-white " href="index.php?action=quanlyadmin&query=admin">
                         
                           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">view_in_ar</i>
+                            <i class="material-icons opacity-10">person</i>
                           </div>
                         
                         <span class="nav-link-text ms-1">Quản lý tài khoản admin </span>
@@ -244,38 +244,39 @@
     <script type="text/javascript">
       // Mỗi lần load trang sẽ chạy hàm thống kê
       // $(document).ready(function(){
-        // thongke();
-        //   var char = new Morris.Area({
-        //     element: 'chart',
-        //     xkey: 'year',
-        //     ykeys: ['date', 'order','sales','quantity'],
-        //     labels: ['Đơn hàng','Doanh thu','Số lượng bán ra']
-        //   });
+      //   thongke();
+      //     var char = new Morris.Area({
+      //       element: 'chart',
+      //       xkey: 'year',
+      //       ykeys: ['date', 'order','sales','quantity'],
+      //       labels: ['Đơn hàng','Doanh thu','Số lượng bán ra']
+      //     });
 
-          // $('select-date').change(function(){
-          //   var thoigian = $(this).val();
-          //   if(thoigian=='7ngay'){
-          //     var text = '7 ngày qua';
-          //   }else if(thoigian=='28ngay'){
-          //     var text = '28 ngày qua';
-          //   }else if(thoigian=='90ngay'){
-          //     var text = '90 ngày qua';
-          //   }else{
-          //     var text = '365 ngày qua';
-          //   }
-          //   $('#text-date').text(text);
-          //   $.ajax({
-          //     url:"modules/thongke.php",
-          //     method:"POST",
-          //     dataType:"JSON",
-          //     data:{thoigian:thoigian},
-          //     success: function(data)
-          //     {
-          //       char.setData(data);
-          //       $('#text-date').text(text);
-          //     }
-          //   });
-          // });
+      //     $('select-date').change(function(){
+      //       var thoigian = $(this).val();
+      //       if(thoigian=='7ngay'){
+      //         var text = '7 ngày qua';
+      //       }else if(thoigian=='28ngay'){
+      //         var text = '28 ngày qua';
+      //       }else if(thoigian=='90ngay'){
+      //         var text = '90 ngày qua';
+      //       }else{
+      //         var text = '365 ngày qua';
+      //       }
+      //       $('#text-date').text(text);
+      //       $.ajax({
+      //         url:"modules/thongke.php",
+      //         method:"POST",
+      //         dataType:"JSON",
+      //         data:{thoigian:thoigian},
+      //         success: function(data)
+      //         {
+      //           char.setData(data);
+      //           $('#text-date').text(text);
+      //         }
+      //       });
+      //     });
+          
       //   function thongke(){
       //     var text = '365 ngày qua';
       //     $('#text-date').text(text);
@@ -310,18 +311,11 @@
   labels: ['Đơn hàng','Doanh thu','Số lượng bán ra']
 });
       
+
            
     </script>
 
-<script>
-  var win = navigator.platform.indexOf('Win') > -1;
-  if (win && document.querySelector('#sidenav-scrollbar')) {
-    var options = {
-      damping: '0.5'
-    }
-    Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-  }
-</script>
+<!--  -->
 
 <!-- Github buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>

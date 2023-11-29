@@ -52,7 +52,7 @@
  
   </ul> <!-- END tabs-nav -->
   <div id="tabs-content">
-    <div id="tab1" class="tab-content">
+    <div id="tab1" class="tab-content" style="padding-left: 25px;">
         <?php echo $row_chitiet["noidung"] ?>
     </div>
     

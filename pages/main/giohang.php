@@ -5,7 +5,7 @@
   // unset($_SESSION['dangky']);
     if(isset($_SESSION["dangky"])){
                   // hiện tên người đăng nhập từ file login
-      echo '<h2 class="m-4 btn btn-success" >Xin chào: '.'<span  style="">'.$_SESSION["dangky"].'</span></h2>' ;
+      echo '<h2 class=" ml-4 btn btn-success" >Xin chào: '.'<span  style="">'.$_SESSION["dangky"].'</span></h2>' ;
     }
     
 ?>
@@ -16,13 +16,30 @@
         text-align: center;
         font-family: Georgia;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 35px;
         border: 2px double ;
         border-radius: 3px;
         background-color: white;
+        height: 50px;
+        padding-top :2px;
   }
 </style>
-<h1 class="tieude"> GIỎ HÀNG </h1>
+<h1 class="tieude" > GIỎ HÀNG </h1>
+
+
+<div class="container pb-2">
+  <!-- Responsive Arrow Progress Bar -->
+  <div class="arrow-steps clearfix">
+    <div class="step current font-weight-bold"> <span> <a href="index.php?quanly=giohang" >Giỏ hàng</a></span> </div>
+    <div class="step font-weight-bold "> <span><a href="index.php?quanly=vanchuyen" >Vận chuyển</a></span> </div>
+    <div class="step font-weight-bold "> <span><a href="index.php?quanly=thongtinthanhtoan" >Thanh toán</a><span> </div>
+    <div class="step font-weight-bold "> <span><a href="index.php?quanly=donhangdadat" >Lịch sử đơn hàng</a><span> </div>
+   
+  </div>
+  
+</div>
+
+
 <table class="table border border-dark text-center rounded" style="background-color: white" >
   <thead >
     <tr >
@@ -54,15 +71,15 @@
       <td class="border border-dark"><?php  echo $cart_item["masp"] ?></td>
       <td class="border border-dark"><?php  echo $cart_item["tensanpham"] ?></td>
       <td class="border border-dark"><img src="../../nienluancoso/admin/modules/quanlysp/uploads/<?php echo $cart_item["hinhanh"] ?>" width="150px" alt=""></td>
-      <td class="border border-dark" style="text-align:center;">
-        <a href="pages/main/themgiohang.php?cong=<?php echo $cart_item["id"]?>"><i class="fa-solid fa-plus"></i></a>
+      <td class="border border-dark" style="text-align:center;font-size: 20px;">
+        <a href="pages/main/themgiohang.php?cong=<?php echo $cart_item["id"]?>"><i style="font-size: 25px;" class="fa-solid fa-plus"></i></a>
         <?php  echo $cart_item["soluong"] ?>
-        <a href="pages/main/themgiohang.php?tru=<?php echo $cart_item["id"]?>"><i class="fa-solid fa-minus"></i></a>
+        <a href="pages/main/themgiohang.php?tru=<?php echo $cart_item["id"]?>"><i style="font-size: 25px;" class="fa-solid fa-minus"></i></a>
     
       </td>
       <td class="border border-dark"><?php  echo number_format($cart_item["giasp"],0,',','.').'vnd' ?></td>
       <td class="border border-dark"><?php  echo number_format($thanhtien,0,',','.').'vnd' ?></td>
-      <td class="border border-dark"><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_item["id"]?>">XÓA</a></td>
+      <td class="border border-dark mt-3 btn btn-dark"><a style="color:white; text-decoration: none;" href="pages/main/themgiohang.php?xoa=<?php echo $cart_item["id"]?>">XÓA</a></td>
     </tr>
   
   </tbody>
@@ -72,16 +89,16 @@
    <tr >
         <td class="border border-dark" colspan="8">
             <p class="font-weight-bold " >TỔNG TIỀN: <?php echo number_format($tongtien,0,',','.').'vnd' ?></p>
-            <p class="font-weight-bold"><a href="pages/main/themgiohang.php?xoatatca=1">XÓA TẤT CẢ</a></p>
+            <p class="font-weight-bold  btn btn-dark"><a style="color:white; text-decoration: none;" href="pages/main/themgiohang.php?xoatatca=1">XÓA TẤT CẢ</a></p>
             <div style="clear:both;"></div>
             <?php 
               if(isset($_SESSION["dangky"])){
             ?>
-                  <p class="font-weight-bold  btn btn-dark "  style="text-align:center; "><a href="pages/main/thanhtoan.php">ĐẶT HÀNG</a></p>
+                  <p class="font-weight-bold  btn btn-dark "  style="text-align:center; "><a style="color:white; text-decoration: none;" href="index.php?quanly=vanchuyen">HÌNH THỨC VẬN CHUYỂN</a></p>
             <?php
               }else{
             ?>
-                <p class="font-weight-bold" style="text-align:center"><a href="index.php?quanly=dangky">ĐĂNG KÝ ĐẶT HÀNG</a></p>
+                <p class="font-weight-bold  btn btn-dark" style="text-align:center"><a style="color:white; text-decoration: none;" href="index.php?quanly=dangky">ĐĂNG KÝ ĐẶT HÀNG</a></p>
             <?php
               }
             ?>
@@ -93,7 +110,7 @@
     }else{
     ?> 
     <tr>
-        <td class="border border-dark"><p>Hiện tại giỏ hàng trống</p></td>
+        <td class="border border-dark " style="font-weight: bold;"><p>Hiện tại giỏ hàng trống</p></td>
     </tr>
     <?php
     }

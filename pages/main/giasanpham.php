@@ -15,27 +15,30 @@
 
     .tieude{
         text-align: center;
-        font-family: Georgia;
+        /* font-family: Georgia; */
         font-weight: bold;
-        font-size: 40px;
+        font-size: 30px;
         border: 2px double ;
         border-radius: 3px;
         background-color: white;
+        width: 600px;
+        margin-left: 7px;
+        padding-left: 1px;
   }
     #ten{
-        font-family: 'Courier New', Courier, monospace;
+        /* font-family: 'Courier New', Courier, monospace; */
         box-shadow:  0px 2px 10px rgba(0, 0, 0,0.7);;
     }
 
 </style>
-<h3 class="text-center p-2 m-0 m-0 tieude rounded" id="ten"> Giá sản phẩm : <?php echo $row_title["khoanggia"] ?> </h3>
+<h3 class="text-center p-2  mt-3  tieude rounded" > Giá sản phẩm : <?php echo $row_title["khoanggia"] ?> </h3>
 <div class="row">
                 <?php
                     while($row_pro = mysqli_fetch_array($query_pro)){
                 ?>
-                    <div class="col-lg-4 col-md-6 mb-4  mt-4 ">
+                    <div class="col-lg-4 col-md-6 mb-4  mt-2 ">
                         <div class="card h-100 border border-warning">
-                            <a href="index.php?quanly=sanpham&id=<?php echo $row_pro["id_sanpham"] ?>" class="text text-dark">
+                            <a href="index.php?quanly=sanpham&id=<?php echo $row_pro["id_sanpham"] ?>" class="text text-dark" style="text-decoration: none;">
                                 <div style="height: 200px; width:100%;">
                                     <img class="" style="width:100%; height: 100%;" src="../../nienluancoso/admin/modules/quanlysp/uploads/<?php echo $row_pro["hinhanh"] ?>" alt="">
                                 </div >   

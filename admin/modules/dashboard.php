@@ -1,4 +1,4 @@
-<h1>CHÀO MỪNG ADMIN ĐÃ ĐẾN</h1>
+<h1 class="pt-3">CHÀO MỪNG ADMIN ĐÃ ĐẾN</h1>
 <p>Thống kê đơn hàng theo: <span id="text-date"></span> </p>
 <p>
     <select name="" id="" class="select-date">

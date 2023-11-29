@@ -23,7 +23,15 @@
         $tieude = 'Đặt hàng website AnhLight shop đã thành công';
         $noidung = "<p>Cảm ơn quý khách đã đặt hàng tại cửa hàng chúng tôi. Với mã đơn hàng:".$code_order."</p>";
         $noidung .= " <h4>Đơn hàng đặt bao gồm :</h4>";
-
+        
+        foreach($_SESSION['cart'] as $key => $value){
+            $noidung = "<ul style='border:1px solid blue; margin:10px'>
+                <li>".$value['masp']."</li>
+                <li>".$value['tensanpham']."</li>
+                <li>".number_format($value['giasp'],0,',','.')."</li>
+                <li>".$value['soluong']."</li>
+            </ul>";
+        }
 
         $maildathang = $_SESSION['email'];
         $mail = new Mailer();

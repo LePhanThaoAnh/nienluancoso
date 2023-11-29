@@ -41,7 +41,7 @@
     
 </head>
 
-<body id="body">
+<body id="body" style="">
     <!--Include file kết nối database-->
     <style>
         a{
@@ -54,7 +54,7 @@
     <?php include("pages/header.php") ?>
     
     <!-- Main -->
-    <div class="container content "  style="margin-bottom:250px;  ">
+    <div class="container-fluid content "  style="margin-bottom:250px;  ">
 
         <div class="row">
              
@@ -85,5 +85,33 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
     <script rel="stylesheet" src="./js/giaodien.js"></script> 
 </body>
+  <!-- <script type="text/JavaScript">
+      $(document).ready(function() {
 
+  var back = $(".prev");
+  var next = $(".next");
+  var steps = $(".step");
+
+  next.bind("click", function() {
+    $.each(steps, function(i) {
+      if (!$(steps[i]).hasClass('current') && !$(steps[i]).hasClass('done')) {
+        $(steps[i]).addClass('current');
+        $(steps[i - 1]).removeClass('current').addClass('done');
+        return false;
+      }
+    })
+  });
+  back.bind("click", function() {
+    $.each(steps, function(i) {
+      if ($(steps[i]).hasClass('done') && $(steps[i + 1]).hasClass('current')) {
+        $(steps[i + 1]).removeClass('current');
+        $(steps[i]).removeClass('done').addClass('current');
+        return false;
+      }
+    })
+  });
+
+  })
+
+  </script> -->
 </html>

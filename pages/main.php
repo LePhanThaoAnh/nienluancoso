@@ -58,6 +58,12 @@
                     include("main/lienhe.php");
                 }elseif($tam=='timkiem'){
                     include("main/timkiem.php");
+                }elseif($tam=='vanchuyen'){
+                    include("main/vanchuyen.php");
+                }elseif($tam=='thongtinthanhtoan'){
+                    include("main/thongtinthanhtoan.php");
+                }elseif($tam=='donhangdadat'){
+                    include("main/chitietdonhang.php");
                 }else{
                     include("main/index.php");
                 }
