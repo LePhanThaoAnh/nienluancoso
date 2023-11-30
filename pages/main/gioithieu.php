@@ -1,9 +1,9 @@
 
 
-<div class="row"> 
+<div class="row" style="width:1500px;padding-left: 90px; height: 400px;"> 
 
 
-<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel" style="height:500px; width:1200px; padding-left: 20px; ">
+<div id="carouselExampleIndicators" class="carousel slide my-4 " data-ride="carousel" style="height:400px; width:1000px; padding-left: 150px; ">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -104,7 +104,7 @@ $(document).ready(function(){
 
 <div id="advantages">
        
-       <div class="container " style="    padding-top: 60px;">
+       <div class="container " style="    padding-top: 30px;">
            <div class="same-height-row">
                
                <div class="col-sm-4">

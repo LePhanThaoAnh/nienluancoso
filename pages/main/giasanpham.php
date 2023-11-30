@@ -32,7 +32,7 @@
 
 </style>
 
-<div class="container" style="padding:0px 100px">
+<div class="container" style="padding:0px 50px">
     <div class="row">
         <div class="col-3"></div>
         <div class="col-9">
@@ -42,22 +42,58 @@
     </div>
     <div class="row">
         <div class="col-3">
-                <div>
-                    <p class="mt-1 mb-0 text-center" style="font-weight: bold;font-size:25px">KHOẢNG GIÁ</p>
-                </div>
+        <div class="card mt-3">
+                    <article class="card-group-item">
+                        <header class="card-header"><h6 class="title" style="font-weight: bold;font-size:20px;">DANH MỤC ĐÈN</h6></header>
+                        <div class="filter-content">
+                            <div class="list-group list-group-flush">
+                            <?php 
+                                $sql_danhmuc ="SELECT * FROM danhmuc ORDER BY id DESC";
+                                $query_danhmuc = mysqli_query($mysqli,$sql_danhmuc);
+                                while($row = mysqli_fetch_array($query_danhmuc)){
+                            ?>
 
-                <div class="list-group mt-2" style="font-weight: bold;">
-                <?php 
-                    $sql_giasp ="SELECT * FROM giasanpham ORDER BY id_gia DESC";
-                    $query_giasp = mysqli_query($mysqli,$sql_giasp);
-                    while($row = mysqli_fetch_array($query_giasp)){
-                ?>
-                    <a style="text-decoration: none;background: white; color: bule;font-size:17px" href="index.php?quanly=giasanpham&id=<?php echo ($row["id_gia"]) ?>" class=" list-group-item border border-white">
-                        <?php echo ($row["khoanggia"]) ?></a>
-                   <?php 
-                    }
-                   ?>
-                </div>
+                            <a style="text-decoration: none;font-weight: bold;font-size:17px;" href="index.php?quanly=danhmucsanpham&id=<?php echo ($row["id"]) ?>" class="list-group-item  border border-white"><?php echo ($row["tendanhmuc"]) ?>  </a>
+
+                            <?php 
+                            }
+                            ?>
+                        </div>  <!-- list-group .// -->
+                        </div>
+                    </article> <!-- card-group-item.// -->
+                   
+                </div> <!-- card.// -->
+
+
+
+                <!-- khoảng giá -->
+                <div class="card mt-3">
+                    <article class="card-group-item">
+                        <header class="card-header"><h6 class="title" style="font-weight: bold;font-size:20px;">KHOẢNG GIÁ</h6></header>
+                        <div class="filter-content">
+                            <div class="list-group list-group-flush">
+                            <?php 
+                                $sql_giasp ="SELECT * FROM giasanpham ORDER BY id_gia DESC";
+                                $query_giasp = mysqli_query($mysqli,$sql_giasp);
+                                while($row = mysqli_fetch_array($query_giasp)){
+                            ?>
+
+                            <a style="text-decoration: none;font-weight: bold;font-size:17px;" 
+                            href="index.php?quanly=giasanpham&id=<?php echo ($row["id_gia"]) ?>" 
+                            class="list-group-item  border border-white">
+                            <?php echo ($row["khoanggia"]) ?>  </a>
+
+                            <?php 
+                            }
+                            ?>
+                        </div>  <!-- list-group .// -->
+                        </div>
+                    </article> <!-- card-group-item.// -->
+                   
+                </div> <!-- card.// -->
+              
+                
+
         </div>
 
         <div class="col">

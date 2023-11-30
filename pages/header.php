@@ -34,7 +34,7 @@
     </div>
 
     <div class="row bg-secondary">
-        <div class="col-7 text text-center">
+        <div class="col-8 text text-center">
             <nav class="navbar navbar-expand-lg navbar-dark bg-secondary  sticky-top text text-center"  style="height: 50px; color:black" style="font-family: 'UTMSwissCondensed';">
             
             <div class="container pt-4" height="40px" style="font-weight: bold; font-size:17px">
@@ -145,11 +145,11 @@
             </nav>
         </div>
 
-        <div class="col-5">
+        <div class="col-4 m-0 pr-5">
             <nav class="navbar navbar-light bg-white justify-content-between border border-dark m-2  rounded" >
                         <a class="navbar-brand"></a>
                         <form class="form-inline" action="index.php?quanly=timkiem" method="POST">
-                            <input class="form-control mr-sm-2"  type="text" placeholder="Tìm kiếm" style="width: 500px;" name="tukhoa" aria-label="Search">
+                            <input class="form-control mr-sm-2"  type="text" placeholder="Tìm kiếm" style="max-width: 320px;" name="tukhoa" aria-label="Search">
                             <input class="btn btn-outline-success my-2 my-sm-0" type="submit" name="timkiem" value="Tìm kiếm"></input>
                         </form>
             </nav>

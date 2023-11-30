@@ -5,7 +5,7 @@
   // unset($_SESSION['dangky']);
     if(isset($_SESSION["dangky"])){
                   // hiện tên người đăng nhập từ file login
-      echo '<h2 class=" ml-4 btn btn-success" >Xin chào: '.'<span  style="">'.$_SESSION["dangky"].'</span></h2>' ;
+      echo '<h2 class=" ml-4 mt-2 btn btn-success" >Xin chào: '.'<span  style="">'.$_SESSION["dangky"].'</span></h2>' ;
     }
     
 ?>
