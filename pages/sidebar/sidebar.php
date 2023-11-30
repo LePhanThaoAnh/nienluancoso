@@ -2,7 +2,7 @@
     #locsp{
         /* font-family: Georgia; */
         font-weight: bold;
-        font-size: 20px;
+        font-size: 15px;
         border: 2px double ;
         border-radius: 3px;
         background-color: white;

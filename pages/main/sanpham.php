@@ -8,17 +8,18 @@
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 40px;
-        border: 2px double ;
+        font-size: 25px;
+        /* border: 2px double ; */
         border-radius: 3px;
         background-color: white;
   }
 </style>
-<h2 class="text-uppercase  tieude">Chi tiết sản phẩm <?php echo $row_chitiet["masp"] ?> </h2>
 
-    <div class="container " style="">
+
+    <div class="container " style="padding: 0px 100px;">
+    <h2 class="text-uppercase mt-3 tieude">Chi tiết sản phẩm <?php echo $row_chitiet["masp"] ?> </h2>
         <div class="row border border-dark mb-4 rounded" style="background-color: white; ">
-            <div class="col border border-warning m-2 rounded" style="background-color: white; ">
+            <div class="col  m-2 rounded" style="background-color: white; ">
             <div style="height: 450px; width:100%;">
                     <img class="" style="width:100%; height: 100%;" 
                     src="../../nienluancoso/admin/modules/quanlysp/uploads/<?php echo $row_chitiet["hinhanh"] ?>" alt="">

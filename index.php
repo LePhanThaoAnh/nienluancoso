@@ -54,15 +54,15 @@
     <?php include("pages/header.php") ?>
     
     <!-- Main -->
-    <div class="container-fluid content "  style="margin-bottom:250px;  ">
+    <div class="container content "  style="margin-bottom:250px; padding: 0px 70px ; font-size:15px;">
 
         <div class="row">
              
             <!--menu-->
-            <?php include("pages/sidebar/sidebar.php") ?>
+            <!-- <?php include("pages/sidebar/sidebar.php") ?> -->
 
             <!-- Maincontent  -->
-            <div class="col-10">
+            <div class="col-12">
                 <?php include("pages/main.php") ?>
             
             </div>

@@ -9,9 +9,9 @@
     if($page == "" || $page == 1){
         $begin = 0;
     }else{
-        $begin = ($page*6) - 6;
+        $begin = ($page*8) - 8;
     }
-    $sql_pro ="SELECT * FROM sanpham,danhmuc WHERE sanpham.id_danhmuc=danhmuc.id ORDER BY id_sanpham DESC LIMIT $begin,6";
+    $sql_pro ="SELECT * FROM sanpham,danhmuc WHERE sanpham.id_danhmuc=danhmuc.id ORDER BY id_sanpham DESC LIMIT $begin,8";
     $query_pro = mysqli_query($mysqli,$sql_pro);
 
 ?>
@@ -44,16 +44,16 @@
         -moz-animation: my 5000ms infinite; 
         -o-animation: my 3000ms infinite; 
         animation: my 5000ms infinite;
-        font-size: 50px;
+        font-size: 30px;
         text-align: center;
     }
 </style>
-<h3 class="text-center pt-2 ml-5 mr-5 tieude rounded" >SẢN PHẨM MỚI NHẤT</h3>
+<h3 class="text-center mt-3 pt-2 ml-5 mr-5 tieude rounded" >SẢN PHẨM MỚI NHẤT</h3>
 <div class="row  m-1 rounded" style=" ">
             <?php
                 while($row_pro = mysqli_fetch_array($query_pro)){
             ?>
-                    <div class="col-lg-4 col-md-6 mb-4  mt-4 " >
+                    <div class="col-lg-3 col-md-6 mb-3  mt-4 " >
                         <div class="card h-100 border border-warning " style="box-shadow: 0px 2px 10px rgba(255, 215, 0,0.7);" >
                             <a href="index.php?quanly=sanpham&id=<?php echo $row_pro["id_sanpham"] ?>" class="text text-dark" style="text-decoration: none;">
                             <div style="height: 200px; width:100%;">

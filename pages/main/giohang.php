@@ -11,7 +11,7 @@
 ?>
 
 </div>
-<style>
+<!-- <style>
   .tieude{
         text-align: center;
         font-family: Georgia;
@@ -24,16 +24,16 @@
         padding-top :2px;
   }
 </style>
-<h1 class="tieude" > GIỎ HÀNG </h1>
+<h1 class="tieude" > GIỎ HÀNG </h1> -->
 
 
 <div class="container pb-2">
   <!-- Responsive Arrow Progress Bar -->
-  <div class="arrow-steps clearfix">
+  <div class="arrow-steps clearfix mt-2">
     <div class="step current font-weight-bold"> <span> <a href="index.php?quanly=giohang" >Giỏ hàng</a></span> </div>
     <div class="step font-weight-bold "> <span><a href="index.php?quanly=vanchuyen" >Vận chuyển</a></span> </div>
     <div class="step font-weight-bold "> <span><a href="index.php?quanly=thongtinthanhtoan" >Thanh toán</a><span> </div>
-    <div class="step font-weight-bold "> <span><a href="index.php?quanly=donhangdadat" >Lịch sử đơn hàng</a><span> </div>
+    <!-- <div class="step font-weight-bold "> <span><a href="index.php?quanly=donhangdadat" >Lịch sử đơn hàng</a><span> </div> -->
    
   </div>
   

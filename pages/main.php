@@ -1,12 +1,6 @@
 <div class="col">
 
-        <nav class="navbar navbar-light bg-light justify-content-between border border-dark m-2 rounded">
-                <a class="navbar-brand"></a>
-                <form class="form-inline" action="index.php?quanly=timkiem" method="POST">
-                    <input class="form-control mr-sm-2"  type="text" placeholder="Tìm kiếm" name="tukhoa" aria-label="Search">
-                    <input class="btn btn-outline-success my-2 my-sm-0" type="submit" name="timkiem" value="Tìm kiếm"></input>
-                </form>
-        </nav>
+        
 
 
         <?php 
