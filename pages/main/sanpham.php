@@ -45,25 +45,25 @@
     </div>
 
     <div class="clear"></div>
-    <div class="tabs">
-  <ul id="tabs-nav"  >
-    <li style="background-color: white;"><a href="#tab1">Nội dung chi tiết</a></li>
-    <!-- <li style="background-color: white;"><a href="#tab2">Hình ảnh</a></li> -->
-   
- 
-  </ul> <!-- END tabs-nav -->
-  <div id="tabs-content">
-    <div id="tab1" class="tab-content" style="padding-left: 25px;">
-        <?php echo $row_chitiet["noidung"] ?>
-    </div>
-    
-    <div id="tab2" class="tab-content">
-        <?php echo $row_chitiet["noidung"] ?>
-    </div>
+    <div class="tabs m-2">
+        <ul id="tabs-nav"  >
+            <li style="background-color: white;"><a href="#tab1">Nội dung chi tiết</a></li>
+            <!-- <li style="background-color: white;"><a href="#tab2">Hình ảnh</a></li> -->
+        
+        
+        </ul> <!-- END tabs-nav -->
+        <div id="tabs-content">
+            <div id="tab1" class="tab-content" style="padding-left: 25px;">
+                <?php echo $row_chitiet["noidung"] ?>
+            </div>
+            
+            <div id="tab2" class="tab-content">
+                <?php echo $row_chitiet["noidung"] ?>
+            </div>
     
     
   </div> <!-- END tabs-content -->
-</div> <!-- END tabs -->
+    </div> <!-- END tabs -->
 
 <?php
     }

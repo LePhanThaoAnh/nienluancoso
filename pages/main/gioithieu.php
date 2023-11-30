@@ -154,7 +154,7 @@ $(document).ready(function(){
                        
                        <h3><a href="#">Đa dạng mẫu mã và giá tiên</a></h3>
                        
-                       <p>Cửa hàng đèn AnhLight với nhiều mẫu mã, thiết kế và giá tiền giúp quý khách dễ dàng chọn lựa</p>
+                       <p>Cửa hàng đèn AnhLight với nhiều mẫu mã, thiết kế và giá tiền cho quý khách chọn lựa</p>
                        
                    </div>
                    

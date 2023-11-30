@@ -73,6 +73,37 @@
         </div>
         <!-- /.row -->
 
+        <div class="row" style="height: 100px;">
+
+          <div class="col gioithieu">
+              <div class="tieudegioithieu row">
+                <i class="iconcuoi col-3 pl-4 pt-3 fa-solid fa-cart-shopping"> </i>
+                <p class="chugioithieu col-9 p-0 mt-4">Miễn phí lắp đặt đơn hàng </p></div>
+          </div>
+
+          <div class="col gioithieu">
+              <div class="tieudegioithieu row">
+              <i class="iconcuoi col-3 pl-5 pt-3 fa-solid fa-phone"></i>
+              <p class="chugioithieu col-9 p-0 mt-4">Hỗ trợ 1900 1567 </p></div>
+          </div>
+
+          <div class="col gioithieu">
+              <div class="tieudegioithieu row">
+              <i class="iconcuoi col-3 pl-5 pt-3 fa-solid fa-dollar-sign"></i>
+                <p class="chugioithieu col-9 p-0 mt-4"> Hoàn tiền nếu ở đâu rẻ hơn</p></div>
+          </div>
+
+          <div class="col gioithieu">
+              <div class="tieudegioithieu row">
+              <i class="iconcuoi col-3 pl-5 pt-3 fa-solid fa-bag-shopping"></i>
+              <p class="chugioithieu col-9 p-0 mt-4"> 
+              Đảm bảo hàng chính hãng 
+              </p></div>
+          </div>
+
+          </div>
+        
+
     </div>
     
     

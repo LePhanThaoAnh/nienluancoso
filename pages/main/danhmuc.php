@@ -18,8 +18,8 @@
         text-align: center;
         /* font-family: Georgia; */
         font-weight: bold;
-        font-size: 20px;
-        border: 2px double ;
+        font-size: 25px;
+        /* border: 2px double ; */
         border-radius: 3px;
         background-color: white;
         width: 600px;
@@ -32,20 +32,27 @@
     }
 
 </style>
+
 <div class="container" style="padding:0px 50px">
-    <h3 class="text-center p-2  mt-3 tieude rounded" id=""> Danh mục sản phẩm : <?php echo $row_title["tendanhmuc"] ?> </h3>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9">
+        <h3 class="text-center   mt-3 tieude rounded" id=""> Danh mục sản phẩm : <?php echo $row_title["tendanhmuc"] ?> </h3>
+
+        </div>
+    </div>
     <div class="row">
 
     <div class="col-3">
-                <p class="mt-3 mb-0  text-center" style="font-weight: bold;font-size:17px" id="locsp">DANH MỤC LIÊN QUAN </p>
+                <p class="mt-3 mb-0  text-center" style="font-weight: bold;font-size:20px" id="locsp">DANH MỤC LIÊN QUAN </p>
                 
-                <div class="list-group m-0 " style="">
+                <div class="list-group m-0 " style="font-weight: bold;">
                 <?php 
                     $sql_danhmuc ="SELECT * FROM danhmuc ORDER BY id DESC";
                     $query_danhmuc = mysqli_query($mysqli,$sql_danhmuc);
                     while($row = mysqli_fetch_array($query_danhmuc)){
                 ?>
-                    <a style="text-decoration: none;background: white; color: bule" href="index.php?quanly=danhmucsanpham&id=<?php echo ($row["id"]) ?>" class=" list-group-item border border-dark">
+                    <a style="text-decoration: none;background: white; color: bule; font-size:17px; " href="index.php?quanly=danhmucsanpham&id=<?php echo ($row["id"]) ?>" class=" list-group-item border border-white">
                         <?php echo ($row["tendanhmuc"]) ?></a>
                    <?php 
                     }
@@ -83,4 +90,6 @@
     </div>
     </div>
 
+    
 </div>
+

@@ -16,65 +16,111 @@
 
 ?>
 <style>
-  @-webkit-keyframes my {
-	 0% { color: #F8CD0A; } 
-	 50% { color: #fff;  } 
-	 100% { color: #F8CD0A;  } 
-    }
-    @-moz-keyframes my { 
-        0% { color: #F8CD0A;  } 
-        50% { color: #fff;  }
-        100% { color: #F8CD0A;  } 
-    }
-    @-o-keyframes my { 
-        0% { color: #F8CD0A; } 
-        50% { color: #fff; } 
-        100% { color: #F8CD0A;  } 
-    }
-    @keyframes my { 
-        0% { color: #F8CD0A;  } 
-        50% { color: #fff;  }
-        100% { color: #F8CD0A;  } 
-    } 
-    .tieude {
-            background:white;
-            font-size:24px;
-            font-weight:bold;
-        -webkit-animation: my 2000ms infinite;
-        -moz-animation: my 5000ms infinite; 
-        -o-animation: my 3000ms infinite; 
-        animation: my 5000ms infinite;
-        font-size: 30px;
+    .tenden{
         text-align: center;
+        color: black;
+        background-color: white;
+        margin-left: 4px;
+        margin-right: 1px;
+        height: 40px;
+    }
+    .theatenden {
+        display: block;
+        padding-top: 8px;
+        font-size: 17px;
+
     }
 </style>
-<h3 class="text-center mt-3 pt-2 ml-5 mr-5 tieude rounded" >SẢN PHẨM MỚI NHẤT</h3>
-<div class="row  m-1 rounded" style=" ">
-            <?php
-                while($row_pro = mysqli_fetch_array($query_pro)){
-            ?>
-                    <div class="col-lg-3 col-md-6 mb-3  mt-4 " >
-                        <div class="card h-100 border border-warning " style="box-shadow: 0px 2px 10px rgba(255, 215, 0,0.7);" >
-                            <a href="index.php?quanly=sanpham&id=<?php echo $row_pro["id_sanpham"] ?>" class="text text-dark" style="text-decoration: none;">
-                            <div style="height: 200px; width:100%;">
-                                    <img class="" style="width:100%; height: 100%;" src="../../nienluancoso/admin/modules/quanlysp/uploads/<?php echo $row_pro["hinhanh"] ?>" alt="">
-                                </div >    
-                                <div class="card-body m-2 text-center">
-                                        <p href="#" class="card-title text-uppercase"><?php echo $row_pro['tensanpham'] ?></p>
-                                        <p href="#" class="card-title "> Mã: <?php echo $row_pro['masp'] ?></p>
-                                        <h6 class="">Giá: <?php echo number_format($row_pro['giasp'],0,',','.').'vnd'?></h6>
-                                        <p href="#" class="card-text"><?php echo $row_pro['tomtat'] ?></p>
-                                </div>
-                            </a>
+<div class="container">
 
-                        </div>
-                    </div>                 
+    <div class="row mt-2 p-0" style="height: 300px">
+        <div class="col-3 p-0 " >
+            <div  style="height: 260px" class="hinhanh m-0 pl-1 pr-1 pt-0 pb-0"><img height="260px" width="280px" src="./img/trangchu1.jpg" alt=""></div>
+            <div class="tenden "><a style="color:black;text-decoration: none;" class="theatenden" href="index.php?quanly=danhmucsanpham&id=20">Đèn ốp trần</a></div>
+        </div>
 
+        <div class="col-3 p-0 ">
+            <div style="height: 260px" class="hinhanh m-0 pl-1 pr-1 pt-0 pb-0"><img height="260px" width="280px" src="./img/trangchu5.jpg" alt=""></div>
+            <div class="tenden"><a style="color:black;text-decoration: none;" class="theatenden" href="index.php?quanly=danhmucsanpham&id=23">Đèn treo tường</a></div>
+        </div>
+
+        <div class="col-3 p-0 ">
+            <div style="height: 260px" class="hinhanh m-0 pl-1 pr-1 pt-0 pb-0"><img height="260px" width="280px" src="./img/trangchu2.jpg" alt=""></div>
+            <div class="tenden"><a style="color:black;text-decoration: none;" class="theatenden" href="index.php?quanly=danhmucsanpham&id=21">Đèn chùm</a></div>
+        </div>
+
+        <div class="col-3 p-0 ">
+            <div style="height: 260px" class="hinhanh m-0 pl-1 pr-1 pt-0 pb-0"><img height="260px" width="280px" src="./img/trangchu3.jpg" alt=""></div>
+            <div class="tenden"><a style="color:black;text-decoration: none;" class="theatenden" href="index.php?quanly=danhmucsanpham&id=19">Đèn trang trí</a></div>
+        </div>
+
+    </div>
+
+    <div class="row-12 mt-7 pt-7">
+
+    <style>
+    @-webkit-keyframes my {
+        0% { color: #F8CD0A; } 
+        50% { color: #fff;  } 
+        100% { color: #F8CD0A;  } 
+        }
+        @-moz-keyframes my { 
+            0% { color: #F8CD0A;  } 
+            50% { color: #fff;  }
+            100% { color: #F8CD0A;  } 
+        }
+        @-o-keyframes my { 
+            0% { color: #F8CD0A; } 
+            50% { color: #fff; } 
+            100% { color: #F8CD0A;  } 
+        }
+        @keyframes my { 
+            0% { color: #F8CD0A;  } 
+            50% { color: #fff;  }
+            100% { color: #F8CD0A;  } 
+        } 
+        .tieude {
+                background:white;
+                font-size:24px;
+                font-weight:bold;
+            -webkit-animation: my 2000ms infinite;
+            -moz-animation: my 5000ms infinite; 
+            -o-animation: my 3000ms infinite; 
+            animation: my 5000ms infinite;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+    <h3 class="text-center mt-3 pt-2  tieude rounded" >SẢN PHẨM MỚI NHẤT</h3>
+    </div>
+
+    <div class="row  m-1 rounded" style=" ">
                 <?php
-                }
-                ?>    
-              
-</div>
+                    while($row_pro = mysqli_fetch_array($query_pro)){
+                ?>
+                        <div class="col-lg-3 col-md-6 mb-3  mt-4 " >
+                            <div class="card h-100 border border-warning " style="box-shadow: 0px 2px 10px rgba(255, 215, 0,0.7);" >
+                                <a href="index.php?quanly=sanpham&id=<?php echo $row_pro["id_sanpham"] ?>" class="text text-dark" style="text-decoration: none;">
+                                <div style="height: 200px; width:100%;">
+                                        <img class="" style="width:100%; height: 100%;" src="../../nienluancoso/admin/modules/quanlysp/uploads/<?php echo $row_pro["hinhanh"] ?>" alt="">
+                                    </div >    
+                                    <div class="card-body m-2 text-center">
+                                            <p href="#" class="card-title text-uppercase"><?php echo $row_pro['tensanpham'] ?></p>
+                                            <p href="#" class="card-title "> Mã: <?php echo $row_pro['masp'] ?></p>
+                                            <h6 class="">Giá: <?php echo number_format($row_pro['giasp'],0,',','.').'vnd'?></h6>
+                                            <p href="#" class="card-text"><?php echo $row_pro['tomtat'] ?></p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>                 
+
+                    <?php
+                    }
+                    ?>    
+                
+    </div>
+
 
 
 <div class="pt-2 pl-4" style="color:black">
@@ -114,3 +160,4 @@
 </div>
         
 
+</div>
