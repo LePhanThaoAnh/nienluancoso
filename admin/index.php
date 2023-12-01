@@ -163,7 +163,16 @@
                       </a>
                     </li>
 
-                    
+                    <li class="nav-item">
+                      <a class="nav-link text-white " href="index.php?action=quanlyvanchuyen&query=lietke">
+                        
+                          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">view_in_ar</i>
+                          </div>
+                        
+                        <span class="nav-link-text ms-1">Vận chuyển</span>
+                      </a>
+                    </li>
 
 
                     <li class="nav-item">
@@ -298,11 +307,12 @@
   element: 'chart',
 
   data: [
-    { year: '2023-10-1', order: 5, sales : 400, quantity:2000 },
-    { year: '2023-10-5', order: 4, sales : 500, quantity:2000 },
+    { year: '2023-12-1', order: 5, sales : 400, quantity:2000 },
+    { year: '2023-12-1', order: 4, sales : 500, quantity:2000 },
     { year: '2023-10-10', order: 15, sales : 500, quantity:2000 },
+    { year: '2023-10-8', order: 15, sales : 500, quantity:1500 },
     { year: '2023-11-1', order: 35, sales : 5400, quantity:2000 },
-    { year: '2023-12-1', order: 25, sales : 3500, quantity:21000 },
+    { year: '2023-12-29', order: 25, sales : 3500, quantity:21000 },
   ],
   
 

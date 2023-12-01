@@ -16,8 +16,9 @@
             <th class="col border border-success">Địa chỉ</th>
             <th class="col border border-success">Email</th>
             <th class="col border border-success">Số điện thoại</th>
-            <th class="col border border-success">Tình trạng</th>
             <th class="col border border-success">Ngày đặt</th>
+            <th class="col border border-success">Tình trạng</th>
+        
             <th class="col border border-success">Quản lý</th>
             </tr>
         </thead>
@@ -35,7 +36,7 @@
             <td class="col border border-success" ><?php echo $row["diachi"]  ?></td>
             <td class="col border border-success" ><?php echo $row["email"]  ?></td>
             <td class="col border border-success" ><?php echo $row["sodienthoai"]  ?></td>
-            
+            <td class="col border border-success"  ><?php echo $row["cart_date"]  ?></td>
             <td class="col border border-success" >
                 <?php 
                 if($row["cart_status"]== 1){
@@ -46,7 +47,7 @@
                 }
                 ?>
             </td>
-            <td class="col border border-success"  ><?php echo $row["cart_date"]  ?></td>
+           
             <td class="col border border-success">
                 <a href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row["code_cart"] ?>">Xem đơn hàng</a> 
             </td>

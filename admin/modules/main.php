@@ -61,6 +61,12 @@
                 }elseif($tam =='donhang' && $query=='xemdonhang' ){
                     include("modules/quanlydonhang/xemdonhang.php");
                     
+                }elseif($tam =='quanlyvanchuyen' && $query=='lietke' ){
+                    include("modules/quanlyvanchuyen/lietke.php");
+                    
+                }elseif($tam =='quanlyvanchuyen' && $query=='xemvanchuyen' ){
+                    include("modules/quanlyvanchuyen/xemvanchuyen.php");
+                    
                 }elseif($tam =='quanlyweb' && $query=='capnhat' ){
                     include("modules/quanlyweb/quanly.php");
                     
