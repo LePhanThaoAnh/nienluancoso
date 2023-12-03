@@ -2,21 +2,32 @@
   
     if(isset($_POST["dangnhap"])){
         $email = $_POST["email"];
+        $matkhau = $_POST["password"];
+
+        if (!$email || !$matkhau )
+        {
+            $message = "Vui lòng nhập đầy đủ thông tin.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            // echo '<p style="color:red">Vui lòng nhập đầy đủ thông tin.</p > ';
+            // exit;
+        }else {
 
         $kiemtra_email = "/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+\.[A-Za-z]{2,6}$/";
         if (!preg_match($kiemtra_email, $email))
         {
-        echo '<p style="color:red"> Email này không hợp lệ. Vui long nhập email khác. </p > ';
-        exit;
+            $message = "Email này không hợp lệ. Vui lòng nhập email khác.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+        // echo '<p style="color:red"> Email này không hợp lệ. Vui lòng nhập email khác. </p > ';
+        // exit;
         }
-
-        $matkhau = $_POST["password"];
 
         //Kiểm tra mật khẩu có đủ 6 số không
         $kiemtra_matkhau = "/^[A-Za-z0-9]{6,}$/";
         if(!preg_match($kiemtra_matkhau,$matkhau)){
-            echo '<p style="color:red"> Mật khẩu phải từ 6 số trở lên.</p > ';
-            exit;
+            $message = "Mật khẩu phải từ 6 số trở lên, vui lòng nhập lại.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            // echo '<p style="color:red"> Mật khẩu phải từ 6 số trở lên.</p > ';
+            // exit;
         } 
         $matkhau = md5($matkhau);
 
@@ -32,11 +43,12 @@
             echo "<script>window.open('index.php','_SELF')</script> ";
 
         }else{
-            echo '<p style="color:red">Tài khoản hoặc mật khẩu không đúng, vui lòng nhập lại.</p > ';
-          
+            // echo '<p style="color:red">Tài khoản hoặc mật khẩu không đúng, vui lòng nhập lại.</p > ';
+            $message = "Tài khoản hoặc mật khẩu bạn đã sai, vui lòng nhập lại.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
             
         }
-    }
+    }}
 ?>
 
 <body>

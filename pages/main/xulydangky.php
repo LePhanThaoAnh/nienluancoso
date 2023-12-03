@@ -20,7 +20,8 @@
     //Kiểm tra người dùng đã nhập liệu đầy đủ chưa
     if (!$username || !$password || !$email || !$address || !$phone)
     {
-        echo "Vui lòng nhập đầy đủ thông tin. <a href='javascript: history.go(-1)'>Trở lại</a>";
+        
+        echo( "Vui lòng nhập đầy đủ thông tin. <a href='javascript: history.go(-1)'>Trở lại</a>");
         exit;
     }
     

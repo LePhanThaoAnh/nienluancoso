@@ -18,7 +18,7 @@
     //Kiểm tra người dùng đã nhập liệu đầy đủ chưa
     if (!$username || !$password )
     {
-        echo "Vui lòng nhập đầy đủ thông tin. <a href='javascript: history.go(-1)'>Trở lại</a>";
+        echo " <script>alert('Vui lòng nhập đầy đủ thông tin. <a href='javascript: history.go(-1)'>Trở lại</a>') </script>";
         exit;
     }
     
@@ -32,9 +32,9 @@
     //Kiểm tra email đã có người dùng chưa
     $sql_email= "SELECT email FROM users WHERE email='".$email."' LIMIT 1";
     $row_email = mysqli_query($mysqli,$sql_email);
-    if (mysqli_num_rows($row_email) > 0)
+    if (mysqli_num_rows($row_email) != 0)
     {
-        echo "Email này đã có người dùng. Vui lòng chọn Email khác.<a href='javascript: history.go(-1)'>Trở lại</a>";
+        echo "Email này chưa được đăng ký.<a href='javascript: history.go(-1)'>Trở lại</a>";
         exit;
     }
     //Kiểm tra dạng nhập vào của ngày sinh
@@ -46,3 +46,4 @@
           
     
 ?>
+

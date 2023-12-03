@@ -9,11 +9,12 @@
         $count = mysqli_num_rows($row);
         if($count > 0) {
             $sql_update = mysqli_query($mysqli, "UPDATE users SET matkhau='".$matkhau_moi."' ");
-            echo '<p style="color:green">Tài khoản đã được thay đổi.</p > ';
+            echo '<h5 style="color:green; text-align:center;">Tài khoản đã được thay đổi.</h5 > ';
 
         }else{
-            echo '<p style="color:red">Tài khoản hoặc mật khẩu cũ không đúng, vui lòng nhập lại.</p > ';
-          
+            // echo '<p style="color:red;text-align:center;">Tài khoản hoặc mật khẩu cũ không đúng, vui lòng nhập lại.</p > ';
+            $message = "Tài khoản hoặc mật khẩu cũ không đúng, vui lòng nhập lại.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
             
         }
     }

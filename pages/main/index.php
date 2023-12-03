@@ -1,16 +1,45 @@
 <?php 
     //nếu tồn tại cái get trang thì lấy trang gán vào page, 
     //cho begin bằng 0 rồi lấy page rồi tính sau đó gán cho begin
-    if(isset($_GET["trang"])){
-        $page = $_GET["trang"];
-    }else{
-        $page = "";
+    // if(isset($_GET["trang"])){
+    //     $page = $_GET["trang"];
+    // }else{
+    //     $page = "";
+    // }
+    // if($page == "" || $page == 1){
+    //     $begin = 0;
+    // }else{
+    //     $begin = ($page*8) - 8;
+    // }
+    // $sql_pro ="SELECT * FROM sanpham,danhmuc WHERE sanpham.id_danhmuc=danhmuc.id ORDER BY id_sanpham DESC LIMIT $begin,8";
+    // $query_pro = mysqli_query($mysqli,$sql_pro);
+
+
+    // $sql_select_pro = "SELECT * FROM tbl_sanpham";
+    // $stmt_select_pro = $pdo->prepare($sql_select_pro);
+    // $stmt_select_pro->execute();
+    // $count_pro = $stmt_select_pro->rowCount();
+    // $page = ceil($count_pro / 8);
+    
+
+    $sql_trang= mysqli_query($mysqli,"SELECT * FROM sanpham");
+    $row_count = mysqli_num_rows($sql_trang);
+    $page = ceil($row_count/8);
+    
+    if (isset($_GET['number_page'])) {
+        $number_page = $_GET['number_page'];
+    } else {
+        $number_page = 0;
     }
-    if($page == "" || $page == 1){
+    if ($number_page == 0 || $number_page == 1) {
         $begin = 0;
-    }else{
-        $begin = ($page*8) - 8;
+    } else {
+        $begin = ($number_page * 8) - 8;
     }
+    
+    // $sql_select = "SELECT * FROM sanpham,danhmuc ORDER BY sanpham.id_danhmuc=danhmuc.id DESC LIMIT $begin,8";
+    // $stmt = $pdo->prepare($sql_select);
+    // $stmt->execute();
     $sql_pro ="SELECT * FROM sanpham,danhmuc WHERE sanpham.id_danhmuc=danhmuc.id ORDER BY id_sanpham DESC LIMIT $begin,8";
     $query_pro = mysqli_query($mysqli,$sql_pro);
 
@@ -33,7 +62,7 @@
 </style>
 <div class="container">
 
-    <div class="row mt-2 p-0" style="height: 300px">
+    <div class="row mt-3 p-0" style="height: 300px">
         <div class="col-3 p-0 " >
             <div  style="height: 260px" class="hinhanh m-0 pl-1 pr-1 pt-0 pb-0"><img height="260px" width="280px" src="./img/trangchu1.jpg" alt=""></div>
             <div class="tenden "><a style="color:black;text-decoration: none;" class="theatenden" href="index.php?quanly=danhmucsanpham&id=20">Đèn ốp trần</a></div>
@@ -123,41 +152,46 @@
 
 
 
-<div class="pt-2 pl-4" style="color:black">
-                <!-- đếm số dòng sản phẩm có  -->
-                <?php 
-                    $sql_trang= mysqli_query($mysqli,"SELECT * FROM sanpham");
-                    $row_count = mysqli_num_rows($sql_trang);
-                    $trang = ceil($row_count/6);
-                ?>
-                <!-- code mẫu phân trang boostrap -->
-                <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                            <a style="color:black" class="page-link" href="index.php?trang=<?php echo ($i-1) ?>" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            </li>
-                            <!-- chạy dòng lặp for -->
-                            <?php 
-                                for($i=1;$i<=$trang;$i++){
-                            ?>
-                            <li  class="page-item <?php if($i == $page){ echo 'active'; }else{} ?> "><a style="color:black" class="page-link"
-                            href="index.php?trang=<?php echo $i ?>"><?php echo $i ?></a></li>
 
-                            <?php 
-                                }
-                            ?>
-                            <li class="page-item">
-                            <a style="color:black" class="page-link" href="index.php?trang=<?php echo ($i+1) ?>" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Next</span>
+      
+
+<div class="row text-center">
+        <div class="col"></div>
+        <div class="col my-3 ms-5 ps-5">
+            <div class="text-center ms-5 ps-5">
+                <nav aria-label="Page navigation example ">
+                    <ul class="pagination "  style="    margin-left: 90px;">
+                        <li class="page-item me-2 mt-1">
+                            <a class="page-link" href="index.php?number_page=<?= $number_page - 1?>" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
                             </a>
-                            </li>
-                        </ul>
+                        </li>
+                        <?php
+                        for ($i = 1; $i <= $page; $i++) :
+                            if ($number_page == '') :
+                                $number_page = 1;
+                        ?>
+                                <li class="me-2 <?php if ($i == $number_page) : echo 'active';
+                                                endif ?>  page-item p-0"><a class="text-decoration-none page-link" href="index.php?number_page=<?= $i ?>"><?= $i ?></a></li>
+                            <?php else : ?>
+                                <li class="me-2 <?php if ($i == $number_page) : echo 'active';
+                                                endif ?>  page-item p-0"><a class="text-decoration-none page-link" href="index.php?number_page=<?= $i ?>"><?= $i ?></a></li>
+                        <?php
+                            endif;
+                        endfor
+                        ?>
+                        <li class="page-item">
+                            <a class="page-link mt-1" href="index.php?number_page=<?= $number_page + 1?>" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
+            </div>
+        </div>
+        <div class="col"></div>
 </div>
-        
+
+
 
 </div>
