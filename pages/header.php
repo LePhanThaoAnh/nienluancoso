@@ -57,7 +57,7 @@
 
                         <!-- Hiển thị danh mục -->
                         <div class="dropdown nav-item active " >
-                        <a class=" mr-3 dropdown-toggle" style="height: 42px;border:none;   margin-top: 8px; background:#6c757d;color:white"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class=" mr-3 dropdown-toggle" style="height: 50%;border:none;   margin-top: 8px; background:#6c757d;color:white"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Danh mục đèn
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -84,7 +84,7 @@
                             
                         <!-- Hiển thị lọc theo giá -->
                         <div class="dropdown nav-item active " >
-                        <a class=" mr-2 dropdown-toggle" style="height: 42px;   margin-top: 8px; border:none;background:#6c757d; color:white;font: 18px; font-family:Arial, Helvetica, sans-serif"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class=" mr-2 dropdown-toggle" style="height: 50%;   margin-top: 8px; border:none;background:#6c757d; color:white;font: 18px; font-family:Arial, Helvetica, sans-serif"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Giá đèn
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 270px">

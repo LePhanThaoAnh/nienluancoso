@@ -11,20 +11,7 @@
 ?>
 
 </div>
-<!-- <style>
-  .tieude{
-        text-align: center;
-        font-family: Georgia;
-        font-weight: bold;
-        font-size: 35px;
-        border: 2px double ;
-        border-radius: 3px;
-        background-color: white;
-        height: 50px;
-        padding-top :2px;
-  }
-</style>
-<h1 class="tieude" > GIỎ HÀNG </h1> -->
+
 
 
 <div class="container pb-2">
